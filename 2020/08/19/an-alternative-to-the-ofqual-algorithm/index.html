@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.74.3" />
+
+
+<title>An Alternative to the OFQUAL algorithm - A Hugo website</title>
+<meta property="og:title" content="An Alternative to the OFQUAL algorithm - A Hugo website">
+
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="https://github.com/julianfaraway">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/julianfaraway">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">4 min read</span>
+    
+
+    <h1 class="article-title">An Alternative to the OFQUAL algorithm</h1>
+
+    
+    <span class="article-date">2020-08-19</span>
+    
+
+    <div class="article-content">
+      <p>As anyone in the UK knows, A-level exams, taken at age 18 and mostly used to determined admission to university were cancelled this year due to the pandemic. The UK government asked OFQUAL (a semi-independent government body) to determine the A-level grades. OFQUAL developed an algorithm based on past school performance and teacher rankings of students explained here. When these results were released there was an uproar because large numbers of students did not receive the grades they were expecting and rejected from their chosen universities. After days of pressure the UK government backtracked on these predicted results and also allowed teacher predicted grades. For many universities, this has resulted in more students having qualified to enter than they can accommodate. Hence chaos.</p>
+<p>Naturally statisticians were very interested in this algorithm. Back at the beginning of the process, the Royal Statistical Society had volunteered professorial help in constructing the algorithm. But OFQUAL insisted on a highly restrictive NDA to which the RSS declined to agree. After details of the algorithm emerged, Guy Nason described several deficiencies in the algorithm. The algorithm had some biases that favoured small independent schools (that usually have wealthier students) and tended to mark down larger state schools (that usually have less privileged students). My colleague in Computer Science at Bath, Tom Haines, describes other problems with the construction of the algorithm (although I do take umbrage at him blaming statisticians for this! – we did try to help)</p>
+<p>Statisticians have suggested improvements to the algorithm that would avoid some of the bias problems but given the information available, students would still have been upset at the result. Given that the school of the student was one of the few useful predictors available, one could not avoid using this information and yet the very fact that this was done was found highly objectionable by many. Why should the school you attend determine your university outcome? Furthermore, due to a natural phenomenom known as “regression to the mean”, predictions for students who had good reasons to expect to do well will be shifted downwards. Even had OFQUAL taken more professional advice, many students would still have been angry about the results and the media uproar would have been much the same.</p>
+<p>I propose that an entirely different approach should have been used. Few really care what A-level grades they get – they care which university will accept them. We can issue a pandemic certificate of completion for the A-levels and deal with the university admission problem directly. Here’s my proposal:</p>
+<ol>
+<li>Wait until all universities have made their offers and students have made their firm (first) choice and insurance (second) choice.</li>
+<li>Oxbridge is at the top of the tree. They randomly choose students from among those they have accepted. They would want to control numbers on different courses and in different colleges but they must make a random selection. They pass on their rejected students to the next tier of universities.</li>
+<li>As in a normal year, the next tier of universities would wait until they receive their insurance students students from Oxbridge. This year they will accept all the insurance students and randomly fill their remaining places with students who held them as first choice. They pass on their rejected students to the next tier as in a normal year.</li>
+<li>The process repeats until all students have been (randomly) allocated. The sequence of universities in the decision process is determined by the entry tariff for the given subject as would happen in a normal year. The only differences are that the selection is random and all insurance students are accepted.</li>
+</ol>
+<p>Now there would be need to be some modifications occasionally if capacity constraints are hit or for other uncommon circumstances. Given that there is about enough capacity in the university system as a whole for all students, my proposed algorithm would ensure that almost all students receive their first or second choice of university. Now doubtless there would be some sad face photos of students whose hopes and dreams have been crushed by not going to their first choice of university and having to suffer through the horrors of their second choice. But the important difference is that their misfortune will be just that – bad luck and cannot be attributed to some perceived bias against them. You can’t get angry at bad luck.</p>
+<p>Efficiency is the other consideration as we want to allocate students to universities commensurate with their ability. Under my scheme, students chose universities where they believed they could gain admission and universities had accepted them. Given we have no A-level exam information, this is the best we can do.</p>
+<p>Unfortunately, it’s too late to execute this scheme as it would be politically unacceptable that already accepted students could now be rejected.</p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+

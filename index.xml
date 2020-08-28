@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>A Hugo website</title>
+    <link>/</link>
+    <description>Recent content on A Hugo website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 19 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>An Alternative to the OFQUAL algorithm</title>
+      <link>/2020/08/19/an-alternative-to-the-ofqual-algorithm/</link>
+      <pubDate>Wed, 19 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/08/19/an-alternative-to-the-ofqual-algorithm/</guid>
+      <description>As anyone in the UK knows, A-level exams, taken at age 18 and mostly used to determined admission to university were cancelled this year due to the pandemic. The UK government asked OFQUAL (a semi-independent government body) to determine the A-level grades. OFQUAL developed an algorithm based on past school performance and teacher rankings of students explained here. When these results were released there was an uproar because large numbers of students did not receive the grades they were expecting and rejected from their chosen universities.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
+      
+      <guid>/about/</guid>
+      <description>I am Julian Faraway, a Professor of Statistics at the University of Michigan</description>
+    </item>
+    
+    <item>
+      <title>Plotting Regression Datasets</title>
+      <link>/2015/10/09/plotting-regression-datasets/</link>
+      <pubDate>Fri, 09 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/10/09/plotting-regression-datasets/</guid>
+      <description>Consider a regression dataset with a response and several predictors. You want a single plot showing the response plotted against each of the predictors. You could use the pairs() but that also shows plots between the predictors. If there are more than a few predictors, there are too many plots to see any one of them clearly. Here’s a simple solution:
+Here’s an example dataset:
+head(swiss) Fertility Agriculture Examination Education Catholic Infant.</description>
+    </item>
+    
+    <item>
+      <title>Lorem Ipsum</title>
+      <link>/2015/01/01/lorem-ipsum/</link>
+      <pubDate>Thu, 01 Jan 2015 13:09:13 -0600</pubDate>
+      
+      <guid>/2015/01/01/lorem-ipsum/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+    </item>
+    
+  </channel>
+</rss>
