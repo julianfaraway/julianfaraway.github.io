@@ -1,0 +1,49 @@
+---
+title: 'Julian'
+author: 'Julian Faraway'
+date: '2019-11-30'
+authors:
+  - admin
+bio: My research interests include statistics.
+education:
+  courses:
+    course: PhD in Statistics
+    institution: University of California, Berkeley
+    year: 1987
+    course: BA in Mathematics
+    institution: University of Cambridge
+    year: 1982
+email: jjf23@bath.ac.uk
+interests:
+  - Statistics
+  - Data Science
+  - R
+name: Julian Faraway
+organizations:
+  name: Department of Mathematical Sciences
+  url: http://www.bath.ac.uk/math-sci/
+  name: University of Bath
+  url: http://bath.ac.uk
+role: Professor of Statistics
+social:
+  icon: envelope
+  icon_pack: fas
+  link: '#contact'
+  icon: twitter
+  icon_pack: fab
+  link: https://twitter.com/JulianFaraway
+  icon: orcid
+  icon_pack: fab
+  link: https://orcid.org/0000-0002-7308-3084
+  icon: google-scholar
+  icon_pack: fab
+  link: https://scholar.google.co.uk/citations?user=8kgmE5AAAAAJ
+  icon: github
+  icon_pack: fab
+  link: https://github.com/julianfaraway
+superuser: yes
+
+---
+
+My research is on the interface between the theory and application of Statistics. I have worked on a wide range of statistical problems ranging over air pollution, anxiety and depression, astronomy, athletics, concrete, cosmetics, flooding, fungicides, fuel filters, marketing of cars, obesity and schizophrenia. I have also served as a consultant to industry on statistical issues. I worked in the Department of Statistics at the University of Michigan until 2006 when I moved to the University of Bath.
+
