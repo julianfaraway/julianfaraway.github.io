@@ -70,6 +70,116 @@
     </item>
     
     <item>
+      <title>Statisticians do not improve sports</title>
+      <link>/post/statisticians-do-not-improve-sports/</link>
+      <pubDate>Fri, 17 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>/post/statisticians-do-not-improve-sports/</guid>
+      <description>&lt;p&gt;There’s always been statistics in sports. People have kept records of achievements such as the most goals in a season or home runs in a career for many years. These statistics add extra flavour to the mere winning and losing of games and championships. I’ve no complaint about such descriptive statistics. My objection is to the use of more advanced statistical methods to improve the chances of a team to win games. The book, and later the movie, Moneyball, was about recruiting underrated players and changing the strategy of a baseball team to win more games. The underlying methods are statistical and have been very successful. The ideas have been developed and spread throughout the sporting world. Many regard this as a success story for statistics but I beg to differ.&lt;/p&gt;
+&lt;p&gt;I understand the attraction. As a graduate student in Berkeley, I came across Bill James’ Baseball Abstract and was fascinated. James was not a professional statistician but he was great at assembling the right data to answer a question and backing up his claims with sensible statistical summaries. This was  a model for how applied statistics should be done. Nonetheless, I realised that Baseball would not take much notice of a nerdy guy and so it proved for many years until Moneyball. So I’m not one of those people who object to sports sessions at Statistics conferences because sports is a trivial matter (as they feel) that does not deserve such attention at a serious conference.&lt;/p&gt;
+&lt;p&gt;We all like to feel that our work is improving the world in some way such as improving medical procedures or building more reliable products. American football coach, Vince Lombardi said “Winning isn’t everything, it’s the only thing.” so you might think the purpose of professional sports is winning. If statisticians can help teams win, surely that’s a good thing? But for every winner, there is a loser. The statistician can only help one team win at the expense of other teams losing. It’s a zero-sum game.&lt;/p&gt;
+&lt;p&gt;The true purpose of professional sports is not winning but entertainment. Lombardi had it all wrong. We watch sports because we find it enjoyable. The winning and losing are all part of the enjoyment. Do statisticians improve the enjoyment of sports? At best the answer is neutral and there is some evidence to suggest that they make it less enjoyable. In baseball, statisticians have discovered that players who foul off a lot of balls improve the chances of winning while stealing bases does not. Yet watching balls being fouled off is boring while base stealing is exciting. In football, statistical advice has sometimes led to boring, park-the-bus, defensive play.&lt;/p&gt;
+&lt;p&gt;It’s probably too late to turn back the clock as sports teams will not forgo the chance to gain an advantage. Nevertheless, statisticians should realise that, while they may derive some satisfaction and employment in applying statistics to sports, the overall effect of statistics on the professional sporting world has been negative.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Formatting LaTeX for a small screen</title>
+      <link>/post/formatting-latex-for-a-small-screen/</link>
+      <pubDate>Wed, 21 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>/post/formatting-latex-for-a-small-screen/</guid>
+      <description>&lt;p&gt;Almost every student has a smart phone so it makes sense to format lecture notes so that they can be read on these small screen devices. But this can be difficult to achieve if you use LaTeX to produce your lecture notes or other mathematical/statistical handouts. We also want to maintain a full size version so the smaller version needs to be produced with minimal changes. Here are some tips which require increasing effort to implement&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Use A6 size paper by opening your LaTeX document with:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;    \documentclass[a6paper]{article}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is one quarter the size of A4 so it will shrink the page size greatly. I use the default 10pt font since students tend to have good eyesight. I can just about read this if I hold my phone in landscape orientation.&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Use the &lt;em&gt;geometry&lt;/em&gt; package to specify minimal margins:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;    \usepackage[margin=1mm]{geometry}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Because who needs margins if you are not printing this out.&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;I use the &lt;em&gt;graphicx&lt;/em&gt; package for including graphics. When including a plot or diagram use something like this:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;    \includegraphics*[width=0.75\textwidth]{resfit.pdf}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The plot will take up 75% of the width of the page which works for both the small and the large screen versions.&lt;/p&gt;
+&lt;p&gt;Some mathematical expressions can be quite long and will exceed the page width particularly on the small screen version. This is not a problem with text since LaTeX knows how to set the line breaks. But it’s much harder to do this with mathematical expressions. This is where the &lt;em&gt;breqn&lt;/em&gt; package is very useful. At a minimum you can easily replace all your equation environments with &lt;em&gt;dmath&lt;/em&gt;. This will get you automated line breaking in your equations. The &lt;em&gt;breqn&lt;/em&gt; package has a lot more functionality if you want to make more of an effort.&lt;/p&gt;
+&lt;p&gt;It would be nice if LaTeX could produce documents that could dynamically reflow depending on screen size like the *epub&amp;amp; format used on e-readers. But that’s unlikely to happen so a version formatted for the small screen is the next best thing.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What’s wrong with University League tables</title>
+      <link>/post/what-s-wrong-with-university-league-tables/</link>
+      <pubDate>Mon, 23 May 2016 00:00:00 +0000</pubDate>
+      <guid>/post/what-s-wrong-with-university-league-tables/</guid>
+      <description>&lt;p&gt;Today, the Guardian published its 
+&lt;a href=&#34;https://www.theguardian.com/education/2016/may/23/university-league-table-loughborough-races-into-top-five&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;University Guide 2017&lt;/a&gt;. Let’s take a closer look at the components of these league tables. I don’t mean to pick on the Guardian table as the other tables have similar characteristics.&lt;/p&gt;
+&lt;p&gt;Three of the measures are based on student satisfaction and are drawn from the National Student Survey. When the NSS started out, it received fairly honest responses and had some value in provoking genuine improvements in education. But its value has deteriorated over time as Universities and students have reacted to it. Most students realise that the future value of their degree depends on the esteem in which their university is held. It is rational to rate your own university highly even if you don’t really feel that way. Furthermore, students find it difficult to rate their experience since most have only been to one university. It’s like rating the only restaurant you’ve ever eaten at. The Guardian makes things worse by using three measures from the NSS in its rankings.&lt;/p&gt;
+&lt;p&gt;Student to staff ratio is a slippery statistic. Many academics have divided responsibilities between teaching and research. It’s difficult to measure how much teaching they do and how much they interact with students. Class sizes can vary a lot according to type of programme and year in the degree – it’s not like primary education. Spend per student is another problematic measure. Expenditure on facilities can vary substantially from year to year and unpicking university budgets is difficult.&lt;/p&gt;
+&lt;p&gt;Average entry tariff is a solid measure and reflects student preferences. If you reorder the Guardian table on this measure alone, you’ll get a ranking that is closer to something knowledgeable raters would construct. This measure is sensitive to the selection of courses offered by the university since grades vary among A-level subjects.&lt;/p&gt;
+&lt;p&gt;Value added scores are highly dubious. It’s a measure of the difference between degree output and A-level input. A-levels are national tests and are a reasonable measure of entry ability. Degree qualifications are not comparable across Universities. A 2:1 at a top university is not the same as a 2:1 from a lower level university. If you compare the exams in Mathematics taken in top universities with those given by lower level universities, you will see huge differences in the difficulty and content. A student obtaining a 2:2 in Mathematics at a top university will likely know far more Maths than a student with a first from a post 92 university. This means it is foolish to take the proportion of good degrees (1 and 2:1) as a measure of output performance.&lt;/p&gt;
+&lt;p&gt;The final component is the percentage holding career jobs after six months. This is a useful statistic but is hard to measure accurately. This will also be affected by the mixture of courses offered by the university.&lt;/p&gt;
+&lt;p&gt;All these measures are then combined into a single “Guardian score”.  There is no one right way to do this. If you consider the set of all convex combinations of the measures, you would generate a huge number of possible rankings, all them just as valid (or invalid) as the Guardian score. It’s a cake baked from mostly dodgy ingredients using an arbitrary recipe.&lt;/p&gt;
+&lt;p&gt;We might laugh this off as a bit of harmless fun. Unfortunately, some prospective students and members of the public take it seriously. Universities boast of their performance in press releases and on their websites. University administrators set their policies to increase their league table standing. Some of these policies are harmful to education and rarely are they beneficial. Meanwhile, the league tables are not actually useful to a 17 year old deciding on a degree course. The choice is constrained by expected A-level grades, course and location preferences. The statistics in the tables fluctuate from year to year and are an unreliable predictor of the individual student experience.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Is data splitting good for you?</title>
+      <link>/post/is-data-splitting-good-for-you/</link>
+      <pubDate>Fri, 08 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/post/is-data-splitting-good-for-you/</guid>
+      <description>&lt;p&gt;Suppose you have some data and you want to build a model to predict future observations. Data splitting means dividing your data into two, not necessarily equal, parts. One part is used to build the model and the other half to evaluate it in some way. There are two related, but distinct, reasons why people do this. It’s well known that if you use the same data to both build the model and test the performance of that model, you’ll be overoptimistic about how well your model will do in predicting new data. Analysts have various tricks to avoid overconfidence, such as crossvalidation, but these are not perfect. Furthermore, if you need to prove to someone else how well you’ve done, they will be sceptical of such tricks. The gold standard is to reserve part of your data as a test set and build and fit your model on the remaining training set part of the data. You use this model to predict the observations in the test set. Because the test set has been held back, it’s (almost) like having fresh data. The performance on this test set will be a realistic assessment of how the model will perform on future data. But you lost something in the data splitting – the training data is smaller than the full data so the model you select and fit won’t be as good. If you don’t need to prove how good your model is, this form of data splitting is a bad idea. It’s as if a customer orders a new car and asks that the seller drive it around for 10K miles to prove there’s nothing wrong with it. The customer will receive the assurance that the car is not a lemon but it won’t be as good as getting a brand new car in perfect condition.&lt;/p&gt;
+&lt;p&gt;By the way, if you find your model doesn’t do as well as you’d hoped on the test set, you might be tempted to go back and change the model. But the performance on this new model cannot be judged cleanly with the test set because you’ve borrowed some information from the test set to help build the model. You only get one shot using the test set.&lt;/p&gt;
+&lt;p&gt;There’s a second reason why you might use data splitting. The typical model building process involves choosing from a wide range of potential models. Usually there is substantial model uncertainty about the choice but you take your best pick. You then use the data to estimate the parameters of your chosen model. Statistical methods are good at assessing the parametric uncertainty in your estimates, but don’t reflect the model uncertainty at all. This a big reason why statistical models tend to be overconfident about future predictions. That’s where the data splitting can help. You use the the first part of your data to build the model and the second part to estimate the parameters of your chosen model. This results in more realistic estimates of the uncertainty in predictions. Again you pay a price for the data splitting. You use less data to choose the model and less data to fit the model. Your point predictions will not be as good as if you used the full data for everything. But your statements of the uncertainty in your predictions will be better (and probably wider).&lt;/p&gt;
+&lt;p&gt;So judging the value of data splitting in this context means we have to attach some value to uncertainty assessment as well as point prediction. The method of scoring is a good way to do this. All this and more is discussed in my paper 
+&lt;a href=&#34;https://link.springer.com/article/10.1007/s11222-014-9522-9&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Does data splitting improve prediction?&lt;/a&gt; and on 
+&lt;a href=&#34;https://arxiv.org/pdf/1301.2983.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ArXiv&lt;/a&gt;. Although it depends on the circumstances, I show that this form of data splitting can improve prediction.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Modeling Light Curves for Improved Classification of Astronomical Objects</title>
+      <link>/post/modeling-light-curves-for-improved-classification-of-astronomical-objects/</link>
+      <pubDate>Sun, 13 Mar 2016 00:00:00 +0000</pubDate>
+      <guid>/post/modeling-light-curves-for-improved-classification-of-astronomical-objects/</guid>
+      <description>&lt;p&gt;Sky surveys provide a wide-angle view of the universe. Instead of focusing on a single star or galaxy, they provide a snapshot of a wider portion of the sky. Their primary purpose is to search for asteroids, so they take a sequence of images over a short timespan: minutes or hours.  By seeing what has changed, the asteroid can be detected. But meanwhile, much further away, other things are changing. Most objects in the night sky do not change much on human timescales, but some of the most interesting stars and galaxies are performing for us. As the survey returns to the same location from time to time, we can see those objects that have changed. But how do we detect and categorise these objects? Here is a plot of four such objects:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./lceg.png&#34; alt=&#34;Plot of light curves&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The first of the four is an example of an active galactic nucleus. The plot shows how the brightness of the object varies over time. The second plot shows a supernova – most of the time we see nothing because the galaxy is below the detection limit but briefly we see a spark of light for a few weeks. The third object is a flare – it’s mostly quiet but burst into life from time to time. The fourth object is like our sun – it varies a little but enough to be interesting (fortunately for us!).&lt;/p&gt;
+&lt;p&gt;These are examples of light curves. As technology improves, increasingly large numbers of these curves will be recorded. We need to quickly identify and categorise the interesting ones so that they can be rapidly followed up (before the show is over!). In 
+&lt;a href=&#34;https://doi.org/10.1002/sam.11305&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Modeling lightcurves for improved classification of astronomical objects&lt;/a&gt;, we describe how this can be done. You can also read about it on 
+&lt;a href=&#34;https://arxiv.org/abs/1401.3211&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ArXiv&lt;/a&gt; and examine the 
+&lt;a href=&#34;https://people.bath.ac.uk/jjf23/modlc/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;software and data&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Statistics authors single no more</title>
+      <link>/post/statistics-authors-single-no-more/</link>
+      <pubDate>Wed, 09 Dec 2015 00:00:00 +0000</pubDate>
+      <guid>/post/statistics-authors-single-no-more/</guid>
+      <description>&lt;p&gt;While looking at tables of contents for journals and CVs for job applications, it struck me that there are a lot of multi-author papers now. Just to check that I was not imagining it, I downloaded the tables of contents for JASA and JRSS-B for the years 2014, 2004, 1994, 1984 and 1974. I removed the comments, book reviews and corrections to focus just on the research articles. I counted the number of authors for each paper and here’s what I found:&lt;/p&gt;
+&lt;p&gt;Mean number of authors per article&lt;/p&gt;
+&lt;h2 id=&#34;-journal-1974-1984-1994-2004-2014&#34;&gt;| Journal |1974 	|1984 	|1994 	|2004 	|2014|&lt;/h2&gt;
+&lt;p&gt;|JASA |	1.48 |	1.61 |	1.89 | 	2.50 | 	2.97 |
+|JRSS |	1.29 |	1.51 |	1.70 |	2.45 |	2.65 |&lt;/p&gt;
+&lt;p&gt;and&lt;/p&gt;
+&lt;p&gt;Fraction of single author articles&lt;/p&gt;
+&lt;h2 id=&#34;-journal-1974-1984-1994--2004-2014&#34;&gt;| Journal |1974 |	1984 |	1994 | 	2004 |	2014|&lt;/h2&gt;
+&lt;p&gt;|JASA |	0.56 |	0.50 | 	0.35 |	0.19 |	0.06|
+|JRSS |	0.71 |	0.57 |	0.41 |	0.12 |	0.03|&lt;/p&gt;
+&lt;p&gt;I’d like to have done more but Web of Science doesn’t make it easy to get the data. Nevertheless, the trend is very clear. Browse through a few journals, old and new and you’ll see the same pattern. You can see similar trends in other fields. The average number of authors per paper has been increasing significantly over time. Most dramatically, the number of single author papers has gone from a majority down to single digit percentages.&lt;/p&gt;
+&lt;p&gt;Now there are several good reasons not to go it alone. If you write a genuine applications paper, you will be collaborating with a scientist from another field who would be a natural co-author. But most of the articles in these two journals are methodological with Statistical authors. In any case this doesn’t explain the trend. It’s also possible that your co-authors bring different skills to the table, theoretical or computational. It’s also nice to have someone to discuss the paper. You correct each other’s errors and misconceptions. You learn from each other. The social aspect of the collaboration can make you more productive. But that’s also been true in the past. You can point to the greater ease of long distance collaborations using the internet but I suspect there is a stronger cause.&lt;/p&gt;
+&lt;p&gt;The academic world is increasingly driven by metrics. You will get far more credit for writing four articles, each with four authors than for producing one single author paper. So there’s a huge incentive to collaborate. This is good when the co-authors have clearly distinct skills but often they are just other statisticians, much like you.&lt;/p&gt;
+&lt;p&gt;But something has been lost. Most good papers have one main idea and only one person can have that idea. Sure, other people can help refine that idea and turn it into a paper but somewhere in that list of multiple authors there is that one person who had the idea. Truly creative and innovative ideas start out sounding a bit crazy, ill-formed and speculative. If you discuss the idea with your peers, they will back away since it won’t sound like something that will reliably result in a publishable paper. Don’t even think of submitting a grant proposal. So you work on the idea and turn it into flesh. By that time, you don’t need co-authors. Working as a group is a reliable way to get work published but for truly creative work, you need to go it alone.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Plotting Regression Datasets</title>
       <link>/post/2015-07-23-r-rmarkdown/</link>
       <pubDate>Fri, 09 Oct 2015 00:00:00 +0000</pubDate>
