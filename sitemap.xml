@@ -73,6 +73,11 @@
   </url>
   
   <url>
+    <loc>/post/experience-from-running-r-workshops-in-developing-countries/</loc>
+    <lastmod>2020-05-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/publication-type/2/</loc>
     <lastmod>2019-06-25T00:00:00+00:00</lastmod>
   </url>
@@ -138,6 +143,21 @@
   </url>
   
   <url>
+    <loc>/post/linear-models-with-r-translated-to-python/</loc>
+    <lastmod>2018-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/nicole-augustin/</loc>
+    <lastmod>2018-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/smalldata/</loc>
+    <lastmod>2018-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
     <lastmod>2015-10-09T00:00:00+00:00</lastmod>
   </url>
@@ -165,6 +185,11 @@
   <url>
     <loc>/tag/regression/</loc>
     <lastmod>2015-10-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/glm/</loc>
+    <lastmod>2015-08-19T00:00:00+00:00</lastmod>
   </url>
   
 </urlset>

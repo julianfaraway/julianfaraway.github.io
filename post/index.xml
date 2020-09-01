@@ -34,6 +34,42 @@
     </item>
     
     <item>
+      <title>Experience from running R workshops in developing countries</title>
+      <link>/post/experience-from-running-r-workshops-in-developing-countries/</link>
+      <pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate>
+      <guid>/post/experience-from-running-r-workshops-in-developing-countries/</guid>
+      <description>&lt;p&gt;Having run a couple of workshops introducing R in developing countries, I offer four pieces of advice:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Don’t rely on the internet. The internet reaches everywhere but what may be adequate for light use by a single user quickly crumbles when large numbers try to make downloads simultaneously. We anticipated this would be a problem and came equipped with R and Rstudio on many cheap memory sticks but this is not sufficient. For example, try installing the Tidyverse and knitting an R markdown document. You will find this requires installing several packages with multiple dependencies. You’ve probably forgotten the multiple packages, pieces of software and configurations you did to make things work on your own machine. It was all so easy when you had a good internet connection. Find an old laptop with a fresh OS install and disconnect it from the internet. Discover what it takes to get it running on your R teaching materials and then you’ll be prepared. Purchase a local data SIM for that country so you can create a local WiFi hotspot. At least you’ll have a chance to access the internet in case of need (quite likely!). Also plan on a period of chaos at the beginning of the workshop to take care of the many install problems.&lt;/li&gt;
+&lt;li&gt;Tidyverse. R is difficult, particularly for users only familiar with GUI-based statistics software. A tidyverse-only approach greatly simplifies the range of syntax and commands that the workshop participants will need to understand. You can create exercises that they can successfully complete. The tidyverse is sufficiently powerful that you can perform a wide range of practically useful tasks. The participants will gain a feeling of accomplishment and some ability to use R for their own work. Soon enough they will also need to learn to use base R. But if you start with base R, the entry cost is much higher and some of your students will not make it.&lt;/li&gt;
+&lt;li&gt;Simplicity. This comes in two forms. Firstly, in countries where English is not the native language, you will find that most professional people (who are attending your workshop) know at least some English but that does not mean all of them are entirely fluent. In your presentation, speak slowly and enunciate your words clearly. Avoid colloquial expressions and figures of speech. Do not use complex words. As a native speaker of English, you will find this difficult. Use written documentation to supplement your spoken presentation. Consider using a translator. Secondly, consider simplicity in your R presentation. It is tempting to include some cool R tricks but beginners won’t enjoy this. Stick to the basics and reduce complexity where possible.&lt;/li&gt;
+&lt;li&gt;Local Data. All too many expositions of R use overworn example datasets such as mtcars. Find some datasets from the country of the workshop. The participants will find this far more interesting and will suggest different ways to analyze the data. This will demonstrate how R can be used to turn data into knowledge.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title> Linear Models with R translated to Python</title>
+      <link>/post/linear-models-with-r-translated-to-python/</link>
+      <pubDate>Fri, 27 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>/post/linear-models-with-r-translated-to-python/</guid>
+      <description>&lt;p&gt;I have translated the R code in 
+&lt;a href=&#34;https://people.bath.ac.uk/jjf23/LMR/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Linear Models with R&lt;/a&gt; into Python. The code is available as 
+&lt;a href=&#34;https://people.bath.ac.uk/jjf23/LMR/python/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Jupyter Notebooks&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I was able to translate most of the content into Python. Sometimes the output is similar but not the same. Python has far less statistics functionality than R but it seems most of the functionality in base R can be found in Python. R now has over 10,000 packages. Python has about ten times as many but most of these are unrelated to Statistics. My book does not depend heavily on additional packages so this was not so much of an obstacle for me. In a few cases, I rely on R packages that do not exist in Python. Doubtless a Python equivalent could be created but that will take some effort.&lt;/p&gt;
+&lt;p&gt;After this experience, I can say that R is a better choice for Statistics than Python. Nevertheless, there are good reasons why one might choose to do Statistics with Python. One obvious reason is that if you already know Python, you will be reluctant to also learn R. In the UK, Python is now being taught in schools and we will soon have a wave of students who will come to university knowing Python. Python usage is also more common in several areas such as Computer Science and Engineering. Another reason to use Python is the huge range of packages ranging from text, image and signal processing to machine learning and optimisation. These go far beyond what can found in R. The Python userbase is much larger than R and this has translated into greater functionality as a programming language.&lt;/p&gt;
+&lt;p&gt;I started using S in 1984 and moved onto R when it was first released. It’s hard to move from 34 years of experience of R to no prior experience with Python. Here are a few impressions that may help other R users who start learning Python:&lt;/p&gt;
+&lt;p&gt;1.Base R is quite functional without loading any packages. In Python, you will always need to load some packages even to do some basic computations. You will probably need to load numpy, scipy, pandas, statsmodels, matplotlib just to get something similar to the base R environment.
+2.   Python is very fussy about namespaces. You will find yourself have to prefix every loaded function. For example, you cannot write &lt;code&gt;log(x)&lt;/code&gt; — you’ll need to write &lt;code&gt;np.log(x)&lt;/code&gt; indicating that log comes from the numpy package. I understand the reason for this but this alone makes Python code longer than R code.
+3.    Python array indices start from zero. Again, I know why this is but it’s something the R user has to continually adjust to.
+4.    matplotlib is the Python equivalent of the R base plotting functionality. It does more than R but a range of options is daunting for the new user. I had a better time with seaborn which is more like ggplot is producing attractive plots. (There’s a partial translation of ggplot into Python but I preferred seaborn).
+5.    statsmodels provides the linear modelling functionality found in R but you will find some differences that will trip you up. In particular, no intercept term is included by default and the handling of saturated models is different, as the Moore-Penrose inverse is used rather than dropping some offending columns as R does. The output from the linear model is far too verbose for my tastes. Of course, you can work around all these issues.
+6.    Python uses pipes very commonly. It helps if you have already started using these in R via the &lt;code&gt;%&amp;gt;%&lt;/code&gt; operator to get you into that frame of mind.&lt;/p&gt;
+&lt;p&gt;New users inevitably encounter some frustrations but did find Python enjoyable. I have nightmares about having to do Statistics in Excel but Python world is a pleasant land even if it is still a bit unfamiliar to me.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Plotting Regression Datasets</title>
       <link>/post/2015-07-23-r-rmarkdown/</link>
       <pubDate>Fri, 09 Oct 2015 00:00:00 +0000</pubDate>
@@ -68,6 +104,20 @@ we need to allow for that)&lt;/p&gt;
 ggplot(rdf, aes(x=value,y=Fertility)) + geom_point() + facet_wrap(~ variable, scale=&amp;quot;free_x&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;/post/2015-07-23-r-rmarkdown_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;We can elaborate as needed.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>GLM - An overused paradigm</title>
+      <link>/post/glm/</link>
+      <pubDate>Wed, 19 Aug 2015 00:00:00 +0000</pubDate>
+      <guid>/post/glm/</guid>
+      <description>&lt;p&gt;There are a very large number of books, articles and university courses with “Generalised Linear Models” (GLM) in the title. I even wrote such a book myself. But is the GLM paradigm really that useful?&lt;/p&gt;
+&lt;p&gt;The idea is that we can develop a general theory of estimation, inference and diagnostics that will apply to a wide class of models. We will avoid duplication of effort and synergies will arise across this class of models. The idea goes back to a 1972 paper in JRSS-B by Nelder and Wedderburn.&lt;/p&gt;
+&lt;p&gt;But what response distributions belong to the GLM family? The Gaussian (or normal) distribution is the most used in practice. But this is simply the linear model for which much more general and powerful results exist. The Gaussian gains nothing from the GLM perspective.&lt;/p&gt;
+&lt;p&gt;Next we have the binomial and Poisson, which do benefit from GLM membership. But beyond that, the family members become progressively more exotic. The gamma GLM is not commonly used because a linear model with a transformed response will often suffice. Venturing further into the outback, you may find an inverse Gaussian or Tweedie GLM but these are truly rare birds. There are more interesting distributions such as the negative binomial and beta but they are excluded from the club as they don’t belong to the “exponential family” of distributions.&lt;/p&gt;
+&lt;p&gt;So there are only two important members of the GLM family: the binomial and the Poisson. Even here we must be careful because large chunks of the theory and practice for these models is specific to one or the other. The GLM paradigm does tell us one way to estimate and do inference for these models. But there other ways to do these things.&lt;/p&gt;
+&lt;p&gt;Statisticians love widely applicable theories – but perhaps a little too much. GLM is a nice, useful theory but the paradigm has become too dominant in the way people learn or are taught about these kind of models.&lt;/p&gt;
 </description>
     </item>
     
