@@ -5,12 +5,89 @@
     <link>/post/</link>
       <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 19 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Sep 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Posts</title>
       <link>/post/</link>
     </image>
+    
+    <item>
+      <title>Converting to Accessible Lecture Notes</title>
+      <link>/post/converting-to-accessible-lecture-notes/</link>
+      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/post/converting-to-accessible-lecture-notes/</guid>
+      <description>&lt;h2 id=&#34;why-do-this&#34;&gt;Why do this?&lt;/h2&gt;
+&lt;p&gt;In 2018, the UK government passed the 
+&lt;a href=&#34;https://www.legislation.gov.uk/uksi/2018/852/made&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Public Sector Bodies (Websites and Mobile Applications) Accessibility Regulations&lt;/a&gt; which requires Universities (among others) to provide
+all website information in an &amp;ldquo;accessible&amp;rdquo; format. The UK government has provided a more 
+&lt;a href=&#34;https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;detailed set of recommendations&lt;/a&gt; on how
+to meet these requirements. From the mathematical perspective, you can find a 
+&lt;a href=&#34;https://www.homepages.ucl.ac.uk/~ucahmto/elearning/latex/2019/05/06/accessibility-regulations.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;discussion of the requirements&lt;/a&gt; by
+Matthew Towers of UCL.&lt;/p&gt;
+&lt;p&gt;In our case, the primary beneficiaries are people with impaired vision but does include other categories of disability. In the past, we were able to meet the requirements of prior equalities legislation by providing alternative formats to affected students. This might be as simple as producing large print versions but sometimes needed more unusual formats. I was able to send my LaTeX source to a specialist who produced the required formats on a case-by-case basis depending on the students in the class. But under the new legislation, this is no longer acceptable and the primary version of my online materials must be accessible. Since some of these materials are created during the teaching period, I need to be able to create them myself.&lt;/p&gt;
+&lt;p&gt;The main problem for problem for anyone teaching a mathematical subject is that the primary medium for materials is LaTeX compiled to a PDF. Despite some efforts to make LaTeX-&amp;gt;PDF accessible, it falls far short of the legal requirements. The main advantage of a webpage or an e-reader is that the fonts can be resized or changed and the page can be resized with the text being reflowed to fit. You cannot do this with a PDF. The main challenge for us to convert to a format that allows this resizing and reflowing. There are other requirements for accessibility such as alternate text for images but we&amp;rsquo;ll focus on the resizing and reflowing problem.&lt;/p&gt;
+&lt;h2 id=&#34;bookdown&#34;&gt;Bookdown&lt;/h2&gt;
+&lt;p&gt;A big step towards the solution is to use Bookdown. You can find numerous examples at 
+&lt;a href=&#34;https://bookdown.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bookdown.org&lt;/a&gt;. In particular, you can 
+&lt;a href=&#34;https://bookdown.org/yihui/bookdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bookdown: Authoring Books and Technical Documents with R Markdown&lt;/a&gt;. The books shown here display nicely on webpages but also can be printed in a relatively standard and compact format. If you have never used &lt;code&gt;R&lt;/code&gt; and do not want to use &lt;code&gt;R&lt;/code&gt;, don&amp;rsquo;t worry, you don&amp;rsquo;t need to. You can use bookdown without any Statistics or R - here&amp;rsquo;s an 
+&lt;a href=&#34;https://www.homepages.ucl.ac.uk/~ucahmto/elearning/2019/09/14/bookdown.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;example&lt;/a&gt; of some algebra lecture notes. It certainly helps if you are familiar with markdown but it should not provide much challenge to anyone who has tackled LaTeX.&lt;/p&gt;
+&lt;h2 id=&#34;conversion-process&#34;&gt;Conversion Process&lt;/h2&gt;
+&lt;p&gt;I won&amp;rsquo;t attempt to provide a step-by-step guide here. Start with the first two chapters of the 
+&lt;a href=&#34;https://bookdown.org/yihui/bookdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bookdown book&lt;/a&gt; to get going. It would be a lot easier to write the bookdown lecture
+notes directly but you may have a large amount of existing material that needs to be converted from LaTeX. Some of
+this will be documents of a few pages such as exercise sheets and solutions. You don&amp;rsquo;t need bookdown for these (we&amp;rsquo;ll discuss these later). Bookdown is best for a longer document with multiple sections or chapters.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;You don&amp;rsquo;t need to use Rstudio but it does have some useful features. In particular, making a new
+bookdown project is nice because it creates all the necessary setup files. It also has a nice previewer. But Rstudio was not built for editing LaTeX and I missed all my usual keyboard shortcuts.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.mathjax.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mathjax&lt;/a&gt; takes care of creating all the mathematical equations, both displayed and inline. It&amp;rsquo;s important to understand this is not done using the usual LaTeX compilation process. I had a lot of LaTeX macros from my predecessor throughout the lecture notes. Mathjax didn&amp;rsquo;t understand these and I had to replace them with standard LaTeX. Mathjax only understands a limited set of LaTeX packages. For example, it does not have &lt;em&gt;boldmath&lt;/em&gt; but did have &lt;em&gt;boldsymbol&lt;/em&gt; so I needed to make some translations.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://pandoc.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Pandoc&lt;/a&gt; is wonderful. It will be installed as part of the bookdown installation process. It does an excellent job of converting your LaTeX into markdown. But it fails on the referencing and citation system used by bookdown. I had to fix all these manually.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The 
+&lt;a href=&#34;https://yihui.org/knitr/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;knitr&lt;/a&gt; engine is usually used for processing R code chunks but I was delighted to find that it also handles 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/PGF/TikZ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tikz&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Although you can use bookdown for short LaTeX documents, it&amp;rsquo;s easier to use R markdown (on which bookdown is based). Suppose you have &lt;em&gt;exercise.tex&lt;/em&gt;, convert this to markdown with:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;pandoc -o exercise.md exercise.tex
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You may need to fix up the markdown. Add a YAML such as:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;---
+title: &amp;quot;Exercise One&amp;quot;
+author: &amp;quot;Julian Faraway&amp;quot;
+date: &amp;quot;01/09/2020&amp;quot;
+output: html_document
+---
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Change the name to &lt;em&gt;exercise.Rmd&lt;/em&gt; and convert to HTML with:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Rscript -e &amp;quot;rmarkdown::render(&#39;exercise.Rmd&#39;)&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;You can produce PDF output from the same source. Let&amp;rsquo;s suppose this is for students who want to print out some hard copy. As a rule, they will want a compact format so that there are less pages to print. I put&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;documentclass: article
+geometry: &amp;quot;margin=1.5cm,nohead&amp;quot;
+fontsize: 10pt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;in the YAML header of &lt;code&gt;index.Rmd&lt;/code&gt;. Even so, the output was about 15% longer than the original PDF version. I could cut that down a bit with further fiddling but I don&amp;rsquo;t want to be messing with LaTeX floats. You can also create an epub version for e-readers although I&amp;rsquo;m not sure Kindles and the like can cope with Mathjax. R Markdown can also be output in Microsoft Word format which many mathematicians would regard as the ultimate sacrilege.&lt;/p&gt;
+&lt;ol start=&#34;7&#34;&gt;
+&lt;li&gt;I have yet to find a convenient way to add alternative text to images using bookdown. The alt-text is confounded with the fig-cap but these should be two different texts. I am also unsure what alt-text is best for something like a scatterplot.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;It took some effort to understand how bookdown works and make the conversion. In the future, writing documents in markdown with embeded LaTeX maths will be no more difficult than creating a full LaTeX document. Given the markdown is simpler than LaTeX, I expect it will be easier. It also allows some more interesting possibilities.&lt;/p&gt;
+&lt;p&gt;I was pleased with resulting bookdown lecture notes. They are easier to read on screen than a PDF given the flexibility in resizing and reflowing the content. Although I used to provide students with printed lecture notes, I noticed that many used the online PDF version in preference. Although the conversion was motivated by the need to satisfy accessibility legislation, I think the result will benefit all students. Now that more instruction is online, the primary version of the materials should be the web version rather than the hard copy version.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>An Alternative to the OFQUAL algorithm</title>
@@ -23,11 +100,11 @@
 &lt;p&gt;I propose that an entirely different approach should have been used. Few really care what A-level grades they get – they care which university will accept them. We can issue a pandemic certificate of completion for the A-levels and deal with the university admission problem directly. Here’s my proposal:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Wait until all universities have made their offers and students have made their firm (first) choice and insurance (second) choice.&lt;/li&gt;
-&lt;li&gt;Oxbridge is at the top of the tree. They randomly choose students from among those they have accepted. They would want to control numbers on different courses and in different colleges but they must make a random selection. They pass on their rejected students to the next tier of universities.&lt;/li&gt;
-&lt;li&gt;As in a normal year, the next tier of universities would wait until they receive their insurance students students from Oxbridge. This year they will accept all the insurance students and randomly fill their remaining places with students who held them as first choice. They pass on their rejected students to the next tier as in a normal year.&lt;/li&gt;
+&lt;li&gt;Oxbridge is at the top of the tree and (as usual) pick first. They randomly choose students from among those they have accepted. They would want to control numbers on different courses and in different colleges but they must make a random selection. They pass on their rejected students to the next tier of universities.&lt;/li&gt;
+&lt;li&gt;As in a normal year, the next tier of universities would wait until they receive their insurance students from Oxbridge. This year they will accept all the insurance students and randomly fill their remaining places with students who held them as first choice. They pass on their rejected students to the next tier as in a normal year.&lt;/li&gt;
 &lt;li&gt;The process repeats until all students have been (randomly) allocated. The sequence of universities in the decision process is determined by the entry tariff for the given subject as would happen in a normal year. The only differences are that the selection is random and all insurance students are accepted.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Now there would be need to be some modifications occasionally if capacity constraints are hit or for other uncommon circumstances. Given that there is about enough capacity in the university system as a whole for all students, my proposed algorithm would ensure that almost all students receive their first or second choice of university. Now doubtless there would be some sad face photos of students whose hopes and dreams have been crushed by not going to their first choice of university and having to suffer through the horrors of their second choice. But the important difference is that their misfortune will be just that – bad luck and cannot be attributed to some perceived bias against them. You can’t get angry at bad luck.&lt;/p&gt;
+&lt;p&gt;Now there would be need to be some modifications occasionally if capacity constraints are hit or for other uncommon circumstances. Given that there is about enough capacity in the university system as a whole for all students, my proposed algorithm would ensure that most students receive their first or second choice of university. Now doubtless there would be some sad face photos of students whose hopes and dreams have been crushed by not going to their first choice of university and having to suffer through the horrors of their second choice. But the important difference is that their misfortune will be just that – bad luck and cannot be attributed to some perceived bias against them. You can’t get angry at bad luck.&lt;/p&gt;
 &lt;p&gt;Efficiency is the other consideration as we want to allocate students to universities commensurate with their ability. Under my scheme, students chose universities where they believed they could gain admission and universities had accepted them. Given we have no A-level exam information, this is the best we can do.&lt;/p&gt;
 &lt;p&gt;Unfortunately, it’s too late to execute this scheme as it would be politically unacceptable that already accepted students could now be rejected.&lt;/p&gt;
 </description>
