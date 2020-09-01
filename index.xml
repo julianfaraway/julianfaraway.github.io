@@ -404,7 +404,7 @@ Three
       <pubDate>Sun, 13 Mar 2016 00:00:00 +0000</pubDate>
       <guid>/post/modeling-light-curves-for-improved-classification-of-astronomical-objects/</guid>
       <description>&lt;p&gt;Sky surveys provide a wide-angle view of the universe. Instead of focusing on a single star or galaxy, they provide a snapshot of a wider portion of the sky. Their primary purpose is to search for asteroids, so they take a sequence of images over a short timespan: minutes or hours.  By seeing what has changed, the asteroid can be detected. But meanwhile, much further away, other things are changing. Most objects in the night sky do not change much on human timescales, but some of the most interesting stars and galaxies are performing for us. As the survey returns to the same location from time to time, we can see those objects that have changed. But how do we detect and categorise these objects? Here is a plot of four such objects:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;./lceg.png&#34; alt=&#34;Plot of light curves&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/lceg.png&#34; alt=&#34;Plot of light curves&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The first of the four is an example of an active galactic nucleus. The plot shows how the brightness of the object varies over time. The second plot shows a supernova – most of the time we see nothing because the galaxy is below the detection limit but briefly we see a spark of light for a few weeks. The third object is a flare – it’s mostly quiet but burst into life from time to time. The fourth object is like our sun – it varies a little but enough to be interesting (fortunately for us!).&lt;/p&gt;
 &lt;p&gt;These are examples of light curves. As technology improves, increasingly large numbers of these curves will be recorded. We need to quickly identify and categorise the interesting ones so that they can be rapidly followed up (before the show is over!). In 
 &lt;a href=&#34;https://doi.org/10.1002/sam.11305&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Modeling lightcurves for improved classification of astronomical objects&lt;/a&gt;, we describe how this can be done. You can also read about it on 
@@ -419,15 +419,69 @@ Three
       <pubDate>Wed, 09 Dec 2015 00:00:00 +0000</pubDate>
       <guid>/post/statistics-authors-single-no-more/</guid>
       <description>&lt;p&gt;While looking at tables of contents for journals and CVs for job applications, it struck me that there are a lot of multi-author papers now. Just to check that I was not imagining it, I downloaded the tables of contents for JASA and JRSS-B for the years 2014, 2004, 1994, 1984 and 1974. I removed the comments, book reviews and corrections to focus just on the research articles. I counted the number of authors for each paper and here’s what I found:&lt;/p&gt;
-&lt;p&gt;Mean number of authors per article&lt;/p&gt;
-&lt;h2 id=&#34;-journal-1974-1984-1994-2004-2014&#34;&gt;| Journal |1974 	|1984 	|1994 	|2004 	|2014|&lt;/h2&gt;
-&lt;p&gt;|JASA |	1.48 |	1.61 |	1.89 | 	2.50 | 	2.97 |
-|JRSS |	1.29 |	1.51 |	1.70 |	2.45 |	2.65 |&lt;/p&gt;
+&lt;p&gt;Mean number of authors per article:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Journal&lt;/th&gt;
+&lt;th&gt;1974&lt;/th&gt;
+&lt;th&gt;1984&lt;/th&gt;
+&lt;th&gt;1994&lt;/th&gt;
+&lt;th&gt;2004&lt;/th&gt;
+&lt;th&gt;2014&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;JASA&lt;/td&gt;
+&lt;td&gt;1.48&lt;/td&gt;
+&lt;td&gt;1.61&lt;/td&gt;
+&lt;td&gt;1.89&lt;/td&gt;
+&lt;td&gt;2.50&lt;/td&gt;
+&lt;td&gt;2.97&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;JRSS&lt;/td&gt;
+&lt;td&gt;1.29&lt;/td&gt;
+&lt;td&gt;1.51&lt;/td&gt;
+&lt;td&gt;1.70&lt;/td&gt;
+&lt;td&gt;2.45&lt;/td&gt;
+&lt;td&gt;2.65&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;p&gt;and&lt;/p&gt;
-&lt;p&gt;Fraction of single author articles&lt;/p&gt;
-&lt;h2 id=&#34;-journal-1974-1984-1994--2004-2014&#34;&gt;| Journal |1974 |	1984 |	1994 | 	2004 |	2014|&lt;/h2&gt;
-&lt;p&gt;|JASA |	0.56 |	0.50 | 	0.35 |	0.19 |	0.06|
-|JRSS |	0.71 |	0.57 |	0.41 |	0.12 |	0.03|&lt;/p&gt;
+&lt;p&gt;Fraction of single author articles:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Journal&lt;/th&gt;
+&lt;th&gt;1974&lt;/th&gt;
+&lt;th&gt;1984&lt;/th&gt;
+&lt;th&gt;1994&lt;/th&gt;
+&lt;th&gt;2004&lt;/th&gt;
+&lt;th&gt;2014&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;JASA&lt;/td&gt;
+&lt;td&gt;0.56&lt;/td&gt;
+&lt;td&gt;0.50&lt;/td&gt;
+&lt;td&gt;0.35&lt;/td&gt;
+&lt;td&gt;0.19&lt;/td&gt;
+&lt;td&gt;0.06&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;JRSS&lt;/td&gt;
+&lt;td&gt;0.71&lt;/td&gt;
+&lt;td&gt;0.57&lt;/td&gt;
+&lt;td&gt;0.41&lt;/td&gt;
+&lt;td&gt;0.12&lt;/td&gt;
+&lt;td&gt;0.03&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;p&gt;I’d like to have done more but Web of Science doesn’t make it easy to get the data. Nevertheless, the trend is very clear. Browse through a few journals, old and new and you’ll see the same pattern. You can see similar trends in other fields. The average number of authors per paper has been increasing significantly over time. Most dramatically, the number of single author papers has gone from a majority down to single digit percentages.&lt;/p&gt;
 &lt;p&gt;Now there are several good reasons not to go it alone. If you write a genuine applications paper, you will be collaborating with a scientist from another field who would be a natural co-author. But most of the articles in these two journals are methodological with Statistical authors. In any case this doesn’t explain the trend. It’s also possible that your co-authors bring different skills to the table, theoretical or computational. It’s also nice to have someone to discuss the paper. You correct each other’s errors and misconceptions. You learn from each other. The social aspect of the collaboration can make you more productive. But that’s also been true in the past. You can point to the greater ease of long distance collaborations using the internet but I suspect there is a stronger cause.&lt;/p&gt;
 &lt;p&gt;The academic world is increasingly driven by metrics. You will get far more credit for writing four articles, each with four authors than for producing one single author paper. So there’s a huge incentive to collaborate. This is good when the co-authors have clearly distinct skills but often they are just other statisticians, much like you.&lt;/p&gt;
