@@ -5,12 +5,27 @@
     <link>/post/</link>
       <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 06 Oct 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Posts</title>
       <link>/post/</link>
     </image>
+    
+    <item>
+      <title>A more moderate view of Excel</title>
+      <link>/post/a-more-moderate-view-of-excel/</link>
+      <pubDate>Tue, 06 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>/post/a-more-moderate-view-of-excel/</guid>
+      <description>&lt;p&gt;When I heard that the UK government had lost 16,000 covid-19 cases meaning that the contacts of infected persons were not traced and informed, I got angry. The problem was attributed to an Excel &amp;ldquo;glitch&amp;rdquo; so I posted a rather
+caustic 
+&lt;a href=&#34;https://twitter.com/JulianFaraway/status/1313055455829254145&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tweet&lt;/a&gt; about how Excel should not be used for data analysis. Twitter is a quickfire medium and not the place for nuance. Here&amp;rsquo;s my more moderate view on the matter:&lt;/p&gt;
+&lt;p&gt;In a long career, I&amp;rsquo;ve spent a lot of time cleaning data delivered to me in Excel format. Although it is possible to maintain data cleanly in Excel, this is often not the case. It often takes a lot of time and frustration to restore the data into a form suitable for statistical analysis. Although one could blame the producers of the data, Excel gives them more than enough freedom to mess things up. In particular, there&amp;rsquo;s no clear boundary in Excel between data and analysis - it&amp;rsquo;s all mixed together in a single spreadsheet. It&amp;rsquo;s this experience that makes me angry when I hear about Excel data &amp;ldquo;glitches&amp;rdquo;. Please use almost any other format.&lt;/p&gt;
+&lt;p&gt;Excel is installed on a large proportion of computers and a very large number of people have some experience of using it. It is very versatile software. It&amp;rsquo;s like a swiss army knife, performing a wide range of tasks, often in adequate manner without excelling (hah!) at any particular task. It&amp;rsquo;s been so successful because it so useful. Unfortunately, people sometimes fail to recognise when Excel is not the right tool. They are familiar with Excel and are either unaware of or unwilling to learn a more appropriate software tool.&lt;/p&gt;
+&lt;p&gt;My tweet about the missing covid cases was inaccurate. I said that Excel is not good for (statistical) data analysis when I should have said that Excel is not good for database management. Both are true but in this instance, the error was caused by using Excel in the data handling pipeline. This was a database problem, not a statistics problem.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s all too easy to point the finger at people making errors - how could you be so stupid? etc. But all of us make errors because we are human. Our defence against these errors is using systems that are designed to catch errors. In the missing covid cases example, Excel could have been used successfully. Some people might say that the users and not Excel were at fault. But this is the principal weakness of Excel in comparison to purpose-built statistical software or database management software. These latter software systems make it much easier to build in the error checking, the auditing and the reproducibility that are essential for the minimisation of human error.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Converting to Accessible Lecture Notes</title>
@@ -26,11 +41,11 @@ to meet these requirements. From the mathematical perspective, you can find a
 &lt;a href=&#34;https://www.homepages.ucl.ac.uk/~ucahmto/elearning/latex/2019/05/06/accessibility-regulations.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;discussion of the requirements&lt;/a&gt; by
 Matthew Towers of UCL.&lt;/p&gt;
 &lt;p&gt;In our case, the primary beneficiaries are people with impaired vision but does include other categories of disability. In the past, we were able to meet the requirements of prior equalities legislation by providing alternative formats to affected students. This might be as simple as producing large print versions but sometimes needed more unusual formats. I was able to send my LaTeX source to a specialist who produced the required formats on a case-by-case basis depending on the students in the class. But under the new legislation, this is no longer acceptable and the primary version of my online materials must be accessible. Since some of these materials are created during the teaching period, I need to be able to create them myself.&lt;/p&gt;
-&lt;p&gt;The main problem for problem for anyone teaching a mathematical subject is that the primary medium for materials is LaTeX compiled to a PDF. Despite some efforts to make LaTeX-&amp;gt;PDF accessible, it falls far short of the legal requirements. The main advantage of a webpage or an e-reader is that the fonts can be resized or changed and the page can be resized with the text being reflowed to fit. You cannot do this with a PDF. The main challenge for us to convert to a format that allows this resizing and reflowing. There are other requirements for accessibility such as alternate text for images but we&amp;rsquo;ll focus on the resizing and reflowing problem.&lt;/p&gt;
+&lt;p&gt;The main problem for anyone teaching a mathematical subject is that the primary medium for materials is LaTeX compiled to a PDF. Despite some efforts to make LaTeX-&amp;gt;PDF accessible, it falls far short of the legal requirements. The main advantage of a webpage or an e-reader is that the fonts can be resized or changed and the page can be resized with the text being reflowed to fit. You cannot do this with a PDF. The main challenge is to convert to a format that allows this resizing and reflowing. There are other requirements for accessibility such as alternate text for images but we&amp;rsquo;ll focus on the resizing and reflowing problem.&lt;/p&gt;
 &lt;h2 id=&#34;bookdown&#34;&gt;Bookdown&lt;/h2&gt;
 &lt;p&gt;A big step towards the solution is to use Bookdown. You can find numerous examples at 
-&lt;a href=&#34;https://bookdown.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bookdown.org&lt;/a&gt;. In particular, you can 
-&lt;a href=&#34;https://bookdown.org/yihui/bookdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bookdown: Authoring Books and Technical Documents with R Markdown&lt;/a&gt;. The books shown here display nicely on webpages but also can be printed in a relatively standard and compact format. If you have never used &lt;code&gt;R&lt;/code&gt; and do not want to use &lt;code&gt;R&lt;/code&gt;, don&amp;rsquo;t worry, you don&amp;rsquo;t need to. You can use bookdown without any Statistics or R - here&amp;rsquo;s an 
+&lt;a href=&#34;https://bookdown.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bookdown.org&lt;/a&gt;. In particular, 
+&lt;a href=&#34;https://bookdown.org/yihui/bookdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bookdown: Authoring Books and Technical Documents with R Markdown&lt;/a&gt; is very helpful. The books shown on bookdown.org display nicely on webpages but also can be printed in a relatively standard and compact format. If you have never used &lt;code&gt;R&lt;/code&gt; and do not want to use &lt;code&gt;R&lt;/code&gt;, don&amp;rsquo;t worry, you don&amp;rsquo;t need to. You can use bookdown without any Statistics or R - here&amp;rsquo;s an 
 &lt;a href=&#34;https://www.homepages.ucl.ac.uk/~ucahmto/elearning/2019/09/14/bookdown.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;example&lt;/a&gt; of some algebra lecture notes. It certainly helps if you are familiar with markdown but it should not provide much challenge to anyone who has tackled LaTeX.&lt;/p&gt;
 &lt;h2 id=&#34;conversion-process&#34;&gt;Conversion Process&lt;/h2&gt;
 &lt;p&gt;I won&amp;rsquo;t attempt to provide a step-by-step guide here. Start with the first two chapters of the 
