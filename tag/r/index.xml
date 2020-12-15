@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R | Julian Faraway</title>
-    <link>/tag/r/</link>
-      <atom:link href="/tag/r/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://julianfaraway.github.io/tag/r/</link>
+      <atom:link href="https://julianfaraway.github.io/tag/r/index.xml" rel="self" type="application/rss+xml" />
     <description>R</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 28 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 15 Dec 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://julianfaraway.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>R</title>
-      <link>/tag/r/</link>
+      <link>https://julianfaraway.github.io/tag/r/</link>
     </image>
     
     <item>
-      <title>Bayesian Regression Modeling with INLA</title>
-      <link>/project/brinla/</link>
-      <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>/project/brinla/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Extending the Linear Model with R</title>
-      <link>/project/elm/</link>
-      <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>/project/elm/</guid>
+      <link>https://julianfaraway.github.io/project/elm/</link>
+      <pubDate>Tue, 15 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://julianfaraway.github.io/project/elm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linear Models with R</title>
-      <link>/project/lmr/</link>
+      <link>https://julianfaraway.github.io/project/lmr/</link>
+      <pubDate>Tue, 15 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://julianfaraway.github.io/project/lmr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bayesian Regression Modeling with INLA</title>
+      <link>https://julianfaraway.github.io/project/brinla/</link>
       <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>/project/lmr/</guid>
+      <guid>https://julianfaraway.github.io/project/brinla/</guid>
       <description></description>
     </item>
     

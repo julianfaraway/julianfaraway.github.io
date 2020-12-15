@@ -3,233 +3,197 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/courses/example/example1/</loc>
+    <loc>https://julianfaraway.github.io/courses/example/example1/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/example/</loc>
+    <loc>https://julianfaraway.github.io/courses/example/</loc>
     <lastmod>2018-09-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/example/example2/</loc>
+    <loc>https://julianfaraway.github.io/courses/example/example2/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/talk/example/</loc>
+    <loc>https://julianfaraway.github.io/talk/example/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>https://julianfaraway.github.io/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/talk/</loc>
+    <loc>https://julianfaraway.github.io/talk/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/a-more-moderate-view-of-excel/</loc>
+    <loc>https://julianfaraway.github.io/project/elm/</loc>
+    <lastmod>2020-12-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://julianfaraway.github.io/project/lmr/</loc>
+    <lastmod>2020-12-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://julianfaraway.github.io/project/</loc>
+    <lastmod>2020-12-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://julianfaraway.github.io/tag/r/</loc>
+    <lastmod>2020-12-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://julianfaraway.github.io/tags/</loc>
+    <lastmod>2020-12-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://julianfaraway.github.io/post/a-more-moderate-view-of-excel/</loc>
     <lastmod>2020-10-06T18:24:50+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/</loc>
+    <loc>https://julianfaraway.github.io/post/</loc>
     <lastmod>2020-10-06T18:24:50+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/converting-to-accessible-lecture-notes/</loc>
+    <loc>https://julianfaraway.github.io/post/converting-to-accessible-lecture-notes/</loc>
     <lastmod>2020-09-01T15:29:04+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/project/brinla/</loc>
+    <loc>https://julianfaraway.github.io/project/brinla/</loc>
     <lastmod>2020-08-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/project/elm/</loc>
-    <lastmod>2020-08-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/lmr/</loc>
-    <lastmod>2020-08-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/</loc>
-    <lastmod>2020-08-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tag/r/</loc>
-    <lastmod>2020-08-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-08-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/an-alternative-to-the-ofqual-algorithm/</loc>
+    <loc>https://julianfaraway.github.io/post/an-alternative-to-the-ofqual-algorithm/</loc>
     <lastmod>2020-08-28T15:28:41+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/experience-from-running-r-workshops-in-developing-countries/</loc>
+    <loc>https://julianfaraway.github.io/post/experience-from-running-r-workshops-in-developing-countries/</loc>
     <lastmod>2020-05-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication-type/2/</loc>
+    <loc>https://julianfaraway.github.io/publication-type/2/</loc>
     <lastmod>2019-06-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/author/aoibheann-brady/</loc>
+    <loc>https://julianfaraway.github.io/author/aoibheann-brady/</loc>
     <lastmod>2019-06-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/peak-river-flows/</loc>
+    <loc>https://julianfaraway.github.io/publication/peak-river-flows/</loc>
     <lastmod>2019-06-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/</loc>
+    <loc>https://julianfaraway.github.io/authors/</loc>
     <lastmod>2019-06-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/author/ilaria-prosdocimi/</loc>
+    <loc>https://julianfaraway.github.io/author/ilaria-prosdocimi/</loc>
     <lastmod>2019-06-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/author/julian-faraway/</loc>
+    <loc>https://julianfaraway.github.io/author/julian-faraway/</loc>
     <lastmod>2019-06-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication_types/</loc>
+    <loc>https://julianfaraway.github.io/publication_types/</loc>
     <lastmod>2019-06-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/</loc>
+    <loc>https://julianfaraway.github.io/publication/</loc>
     <lastmod>2019-06-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/</loc>
+    <loc>https://julianfaraway.github.io/courses/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/slides/</loc>
+    <loc>https://julianfaraway.github.io/slides/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/slides/example/</loc>
+    <loc>https://julianfaraway.github.io/slides/example/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/privacy/</loc>
-    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/terms/</loc>
-    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/linear-models-with-r-translated-to-python/</loc>
+    <loc>https://julianfaraway.github.io/post/linear-models-with-r-translated-to-python/</loc>
     <lastmod>2018-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/author/nicole-augustin/</loc>
+    <loc>https://julianfaraway.github.io/author/nicole-augustin/</loc>
     <lastmod>2018-03-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/smalldata/</loc>
+    <loc>https://julianfaraway.github.io/publication/smalldata/</loc>
     <lastmod>2018-03-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/statisticians-do-not-improve-sports/</loc>
+    <loc>https://julianfaraway.github.io/post/statisticians-do-not-improve-sports/</loc>
     <lastmod>2017-11-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/formatting-latex-for-a-small-screen/</loc>
+    <loc>https://julianfaraway.github.io/post/formatting-latex-for-a-small-screen/</loc>
     <lastmod>2016-09-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/what-s-wrong-with-university-league-tables/</loc>
+    <loc>https://julianfaraway.github.io/post/what-s-wrong-with-university-league-tables/</loc>
     <lastmod>2016-05-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/is-data-splitting-good-for-you/</loc>
+    <loc>https://julianfaraway.github.io/post/is-data-splitting-good-for-you/</loc>
     <lastmod>2016-04-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/modeling-light-curves-for-improved-classification-of-astronomical-objects/</loc>
+    <loc>https://julianfaraway.github.io/post/modeling-light-curves-for-improved-classification-of-astronomical-objects/</loc>
     <lastmod>2016-03-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/statistics-authors-single-no-more/</loc>
+    <loc>https://julianfaraway.github.io/post/statistics-authors-single-no-more/</loc>
     <lastmod>2015-12-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/</loc>
-    <lastmod>2015-10-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tag/plot/</loc>
-    <lastmod>2015-10-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/2015-07-23-r-rmarkdown/</loc>
-    <lastmod>2015-10-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/category/r/</loc>
-    <lastmod>2015-10-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tag/r-markdown/</loc>
-    <lastmod>2015-10-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tag/regression/</loc>
-    <lastmod>2015-10-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/glm/</loc>
+    <loc>https://julianfaraway.github.io/post/glm/</loc>
     <lastmod>2015-08-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://julianfaraway.github.io/categories/</loc>
   </url>
   
 </urlset>

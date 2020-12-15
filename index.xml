@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Julian Faraway</title>
-    <link>/</link>
-      <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://julianfaraway.github.io/</link>
+      <atom:link href="https://julianfaraway.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Julian Faraway</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://julianfaraway.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Julian Faraway</title>
-      <link>/</link>
+      <link>https://julianfaraway.github.io/</link>
     </image>
     
     <item>
       <title>Example Page 1</title>
-      <link>/courses/example/example1/</link>
+      <link>https://julianfaraway.github.io/courses/example/example1/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/example/example1/</guid>
+      <guid>https://julianfaraway.github.io/courses/example/example1/</guid>
       <description>&lt;p&gt;In this tutorial, I&amp;rsquo;ll share my top 10 tips for getting started with Academic:&lt;/p&gt;
 &lt;h2 id=&#34;tip-1&#34;&gt;Tip 1&lt;/h2&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
@@ -35,9 +35,9 @@
     
     <item>
       <title>Example Page 2</title>
-      <link>/courses/example/example2/</link>
+      <link>https://julianfaraway.github.io/courses/example/example2/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/example/example2/</guid>
+      <guid>https://julianfaraway.github.io/courses/example/example2/</guid>
       <description>&lt;p&gt;Here are some more tips for getting started with Academic:&lt;/p&gt;
 &lt;h2 id=&#34;tip-3&#34;&gt;Tip 3&lt;/h2&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
@@ -56,9 +56,9 @@
     
     <item>
       <title>Example Talk</title>
-      <link>/talk/example/</link>
+      <link>https://julianfaraway.github.io/talk/example/</link>
       <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
-      <guid>/talk/example/</guid>
+      <guid>https://julianfaraway.github.io/talk/example/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
@@ -77,10 +77,26 @@
     </item>
     
     <item>
+      <title>Extending the Linear Model with R</title>
+      <link>https://julianfaraway.github.io/project/elm/</link>
+      <pubDate>Tue, 15 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://julianfaraway.github.io/project/elm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linear Models with R</title>
+      <link>https://julianfaraway.github.io/project/lmr/</link>
+      <pubDate>Tue, 15 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://julianfaraway.github.io/project/lmr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>A more moderate view of Excel</title>
-      <link>/post/a-more-moderate-view-of-excel/</link>
+      <link>https://julianfaraway.github.io/post/a-more-moderate-view-of-excel/</link>
       <pubDate>Tue, 06 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>/post/a-more-moderate-view-of-excel/</guid>
+      <guid>https://julianfaraway.github.io/post/a-more-moderate-view-of-excel/</guid>
       <description>&lt;p&gt;When I heard that the UK government had lost 16,000 covid-19 cases meaning that the contacts of infected persons were not traced and informed, I got angry. The problem was attributed to an Excel &amp;ldquo;glitch&amp;rdquo; so I posted a rather
 caustic 
 &lt;a href=&#34;https://twitter.com/JulianFaraway/status/1313055455829254145&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tweet&lt;/a&gt; about how Excel should not be used for data analysis. Twitter is a quickfire medium and not the place for nuance. Here&amp;rsquo;s my more moderate view on the matter:&lt;/p&gt;
@@ -93,9 +109,9 @@ caustic
     
     <item>
       <title>Converting to Accessible Lecture Notes</title>
-      <link>/post/converting-to-accessible-lecture-notes/</link>
+      <link>https://julianfaraway.github.io/post/converting-to-accessible-lecture-notes/</link>
       <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>/post/converting-to-accessible-lecture-notes/</guid>
+      <guid>https://julianfaraway.github.io/post/converting-to-accessible-lecture-notes/</guid>
       <description>&lt;h2 id=&#34;why-do-this&#34;&gt;Why do this?&lt;/h2&gt;
 &lt;p&gt;In 2018, the UK government passed the 
 &lt;a href=&#34;https://www.legislation.gov.uk/uksi/2018/852/made&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Public Sector Bodies (Websites and Mobile Applications) Accessibility Regulations&lt;/a&gt; which requires Universities (among others) to provide
@@ -170,33 +186,17 @@ fontsize: 10pt
     
     <item>
       <title>Bayesian Regression Modeling with INLA</title>
-      <link>/project/brinla/</link>
+      <link>https://julianfaraway.github.io/project/brinla/</link>
       <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>/project/brinla/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Extending the Linear Model with R</title>
-      <link>/project/elm/</link>
-      <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>/project/elm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linear Models with R</title>
-      <link>/project/lmr/</link>
-      <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>/project/lmr/</guid>
+      <guid>https://julianfaraway.github.io/project/brinla/</guid>
       <description></description>
     </item>
     
     <item>
       <title>An Alternative to the OFQUAL algorithm</title>
-      <link>/post/an-alternative-to-the-ofqual-algorithm/</link>
+      <link>https://julianfaraway.github.io/post/an-alternative-to-the-ofqual-algorithm/</link>
       <pubDate>Wed, 19 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>/post/an-alternative-to-the-ofqual-algorithm/</guid>
+      <guid>https://julianfaraway.github.io/post/an-alternative-to-the-ofqual-algorithm/</guid>
       <description>&lt;p&gt;As anyone in the UK knows, A-level exams, taken at age 18 and mostly used to determined admission to university were cancelled this year due to the pandemic. The UK government asked OFQUAL (a semi-independent government body) to determine the A-level grades. OFQUAL developed an algorithm based on past school performance and teacher rankings of students explained here. When these results were released there was an uproar because large numbers of students did not receive the grades they were expecting and rejected from their chosen universities. After days of pressure the UK government backtracked on these predicted results and also allowed teacher predicted grades. For many universities, this has resulted in more students having qualified to enter than they can accommodate. Hence chaos.&lt;/p&gt;
 &lt;p&gt;Naturally statisticians were very interested in this algorithm. Back at the beginning of the process, the Royal Statistical Society had volunteered professorial help in constructing the algorithm. But OFQUAL insisted on a highly restrictive NDA to which the RSS declined to agree. After details of the algorithm emerged, Guy Nason described several deficiencies in the algorithm. The algorithm had some biases that favoured small independent schools (that usually have wealthier students) and tended to mark down larger state schools (that usually have less privileged students). My colleague in Computer Science at Bath, Tom Haines, describes other problems with the construction of the algorithm (although I do take umbrage at him blaming statisticians for this! – we did try to help)&lt;/p&gt;
 &lt;p&gt;Statisticians have suggested improvements to the algorithm that would avoid some of the bias problems but given the information available, students would still have been upset at the result. Given that the school of the student was one of the few useful predictors available, one could not avoid using this information and yet the very fact that this was done was found highly objectionable by many. Why should the school you attend determine your university outcome? Furthermore, due to a natural phenomenom known as “regression to the mean”, predictions for students who had good reasons to expect to do well will be shifted downwards. Even had OFQUAL taken more professional advice, many students would still have been angry about the results and the media uproar would have been much the same.&lt;/p&gt;
@@ -215,9 +215,9 @@ fontsize: 10pt
     
     <item>
       <title>Experience from running R workshops in developing countries</title>
-      <link>/post/experience-from-running-r-workshops-in-developing-countries/</link>
+      <link>https://julianfaraway.github.io/post/experience-from-running-r-workshops-in-developing-countries/</link>
       <pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate>
-      <guid>/post/experience-from-running-r-workshops-in-developing-countries/</guid>
+      <guid>https://julianfaraway.github.io/post/experience-from-running-r-workshops-in-developing-countries/</guid>
       <description>&lt;p&gt;Having run a couple of workshops introducing R in developing countries, I offer four pieces of advice:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Don’t rely on the internet. The internet reaches everywhere but what may be adequate for light use by a single user quickly crumbles when large numbers try to make downloads simultaneously. We anticipated this would be a problem and came equipped with R and Rstudio on many cheap memory sticks but this is not sufficient. For example, try installing the Tidyverse and knitting an R markdown document. You will find this requires installing several packages with multiple dependencies. You’ve probably forgotten the multiple packages, pieces of software and configurations you did to make things work on your own machine. It was all so easy when you had a good internet connection. Find an old laptop with a fresh OS install and disconnect it from the internet. Discover what it takes to get it running on your R teaching materials and then you’ll be prepared. Purchase a local data SIM for that country so you can create a local WiFi hotspot. At least you’ll have a chance to access the internet in case of need (quite likely!). Also plan on a period of chaos at the beginning of the workshop to take care of the many install problems.&lt;/li&gt;
@@ -230,17 +230,17 @@ fontsize: 10pt
     
     <item>
       <title>Attribution of long-term changes in peak river flows in Great Britain</title>
-      <link>/publication/peak-river-flows/</link>
+      <link>https://julianfaraway.github.io/publication/peak-river-flows/</link>
       <pubDate>Tue, 25 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/peak-river-flows/</guid>
+      <guid>https://julianfaraway.github.io/publication/peak-river-flows/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Slides</title>
-      <link>/slides/example/</link>
+      <link>https://julianfaraway.github.io/slides/example/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>/slides/example/</guid>
+      <guid>https://julianfaraway.github.io/slides/example/</guid>
       <description>&lt;h1 id=&#34;create-slides-in-markdown-with-academic&#34;&gt;Create slides in Markdown with Academic&lt;/h1&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://sourcethemes.com/academic/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic&lt;/a&gt; | 
@@ -371,28 +371,10 @@ Three
     </item>
     
     <item>
-      <title>Privacy Policy</title>
-      <link>/privacy/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>/privacy/</guid>
-      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Terms</title>
-      <link>/terms/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>/terms/</guid>
-      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title> Linear Models with R translated to Python</title>
-      <link>/post/linear-models-with-r-translated-to-python/</link>
+      <link>https://julianfaraway.github.io/post/linear-models-with-r-translated-to-python/</link>
       <pubDate>Fri, 27 Apr 2018 00:00:00 +0000</pubDate>
-      <guid>/post/linear-models-with-r-translated-to-python/</guid>
+      <guid>https://julianfaraway.github.io/post/linear-models-with-r-translated-to-python/</guid>
       <description>&lt;p&gt;I have translated the R code in 
 &lt;a href=&#34;https://people.bath.ac.uk/jjf23/LMR/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Linear Models with R&lt;/a&gt; into Python. The code is available as 
 &lt;a href=&#34;https://people.bath.ac.uk/jjf23/LMR/python/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Jupyter Notebooks&lt;/a&gt;.&lt;/p&gt;
@@ -411,17 +393,17 @@ Three
     
     <item>
       <title>When small data beats big data</title>
-      <link>/publication/smalldata/</link>
+      <link>https://julianfaraway.github.io/publication/smalldata/</link>
       <pubDate>Thu, 29 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>/publication/smalldata/</guid>
+      <guid>https://julianfaraway.github.io/publication/smalldata/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Statisticians do not improve sports</title>
-      <link>/post/statisticians-do-not-improve-sports/</link>
+      <link>https://julianfaraway.github.io/post/statisticians-do-not-improve-sports/</link>
       <pubDate>Fri, 17 Nov 2017 00:00:00 +0000</pubDate>
-      <guid>/post/statisticians-do-not-improve-sports/</guid>
+      <guid>https://julianfaraway.github.io/post/statisticians-do-not-improve-sports/</guid>
       <description>&lt;p&gt;There’s always been statistics in sports. People have kept records of achievements such as the most goals in a season or home runs in a career for many years. These statistics add extra flavour to the mere winning and losing of games and championships. I’ve no complaint about such descriptive statistics. My objection is to the use of more advanced statistical methods to improve the chances of a team to win games. The book, and later the movie, Moneyball, was about recruiting underrated players and changing the strategy of a baseball team to win more games. The underlying methods are statistical and have been very successful. The ideas have been developed and spread throughout the sporting world. Many regard this as a success story for statistics but I beg to differ.&lt;/p&gt;
 &lt;p&gt;I understand the attraction. As a graduate student in Berkeley, I came across Bill James’ Baseball Abstract and was fascinated. James was not a professional statistician but he was great at assembling the right data to answer a question and backing up his claims with sensible statistical summaries. This was  a model for how applied statistics should be done. Nonetheless, I realised that Baseball would not take much notice of a nerdy guy and so it proved for many years until Moneyball. So I’m not one of those people who object to sports sessions at Statistics conferences because sports is a trivial matter (as they feel) that does not deserve such attention at a serious conference.&lt;/p&gt;
 &lt;p&gt;We all like to feel that our work is improving the world in some way such as improving medical procedures or building more reliable products. American football coach, Vince Lombardi said “Winning isn’t everything, it’s the only thing.” so you might think the purpose of professional sports is winning. If statisticians can help teams win, surely that’s a good thing? But for every winner, there is a loser. The statistician can only help one team win at the expense of other teams losing. It’s a zero-sum game.&lt;/p&gt;
@@ -432,9 +414,9 @@ Three
     
     <item>
       <title>Formatting LaTeX for a small screen</title>
-      <link>/post/formatting-latex-for-a-small-screen/</link>
+      <link>https://julianfaraway.github.io/post/formatting-latex-for-a-small-screen/</link>
       <pubDate>Wed, 21 Sep 2016 00:00:00 +0000</pubDate>
-      <guid>/post/formatting-latex-for-a-small-screen/</guid>
+      <guid>https://julianfaraway.github.io/post/formatting-latex-for-a-small-screen/</guid>
       <description>&lt;p&gt;Almost every student has a smart phone so it makes sense to format lecture notes so that they can be read on these small screen devices. But this can be difficult to achieve if you use LaTeX to produce your lecture notes or other mathematical/statistical handouts. We also want to maintain a full size version so the smaller version needs to be produced with minimal changes. Here are some tips which require increasing effort to implement&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Use A6 size paper by opening your LaTeX document with:&lt;/li&gt;
@@ -461,9 +443,9 @@ Three
     
     <item>
       <title>What’s wrong with University League tables</title>
-      <link>/post/what-s-wrong-with-university-league-tables/</link>
+      <link>https://julianfaraway.github.io/post/what-s-wrong-with-university-league-tables/</link>
       <pubDate>Mon, 23 May 2016 00:00:00 +0000</pubDate>
-      <guid>/post/what-s-wrong-with-university-league-tables/</guid>
+      <guid>https://julianfaraway.github.io/post/what-s-wrong-with-university-league-tables/</guid>
       <description>&lt;p&gt;Today, the Guardian published its 
 &lt;a href=&#34;https://www.theguardian.com/education/2016/may/23/university-league-table-loughborough-races-into-top-five&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;University Guide 2017&lt;/a&gt;. Let’s take a closer look at the components of these league tables. I don’t mean to pick on the Guardian table as the other tables have similar characteristics.&lt;/p&gt;
 &lt;p&gt;Three of the measures are based on student satisfaction and are drawn from the National Student Survey. When the NSS started out, it received fairly honest responses and had some value in provoking genuine improvements in education. But its value has deteriorated over time as Universities and students have reacted to it. Most students realise that the future value of their degree depends on the esteem in which their university is held. It is rational to rate your own university highly even if you don’t really feel that way. Furthermore, students find it difficult to rate their experience since most have only been to one university. It’s like rating the only restaurant you’ve ever eaten at. The Guardian makes things worse by using three measures from the NSS in its rankings.&lt;/p&gt;
@@ -478,9 +460,9 @@ Three
     
     <item>
       <title>Is data splitting good for you?</title>
-      <link>/post/is-data-splitting-good-for-you/</link>
+      <link>https://julianfaraway.github.io/post/is-data-splitting-good-for-you/</link>
       <pubDate>Fri, 08 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/post/is-data-splitting-good-for-you/</guid>
+      <guid>https://julianfaraway.github.io/post/is-data-splitting-good-for-you/</guid>
       <description>&lt;p&gt;Suppose you have some data and you want to build a model to predict future observations. Data splitting means dividing your data into two, not necessarily equal, parts. One part is used to build the model and the other half to evaluate it in some way. There are two related, but distinct, reasons why people do this. It’s well known that if you use the same data to both build the model and test the performance of that model, you’ll be overoptimistic about how well your model will do in predicting new data. Analysts have various tricks to avoid overconfidence, such as crossvalidation, but these are not perfect. Furthermore, if you need to prove to someone else how well you’ve done, they will be sceptical of such tricks. The gold standard is to reserve part of your data as a test set and build and fit your model on the remaining training set part of the data. You use this model to predict the observations in the test set. Because the test set has been held back, it’s (almost) like having fresh data. The performance on this test set will be a realistic assessment of how the model will perform on future data. But you lost something in the data splitting – the training data is smaller than the full data so the model you select and fit won’t be as good. If you don’t need to prove how good your model is, this form of data splitting is a bad idea. It’s as if a customer orders a new car and asks that the seller drive it around for 10K miles to prove there’s nothing wrong with it. The customer will receive the assurance that the car is not a lemon but it won’t be as good as getting a brand new car in perfect condition.&lt;/p&gt;
 &lt;p&gt;By the way, if you find your model doesn’t do as well as you’d hoped on the test set, you might be tempted to go back and change the model. But the performance on this new model cannot be judged cleanly with the test set because you’ve borrowed some information from the test set to help build the model. You only get one shot using the test set.&lt;/p&gt;
 &lt;p&gt;There’s a second reason why you might use data splitting. The typical model building process involves choosing from a wide range of potential models. Usually there is substantial model uncertainty about the choice but you take your best pick. You then use the data to estimate the parameters of your chosen model. Statistical methods are good at assessing the parametric uncertainty in your estimates, but don’t reflect the model uncertainty at all. This a big reason why statistical models tend to be overconfident about future predictions. That’s where the data splitting can help. You use the the first part of your data to build the model and the second part to estimate the parameters of your chosen model. This results in more realistic estimates of the uncertainty in predictions. Again you pay a price for the data splitting. You use less data to choose the model and less data to fit the model. Your point predictions will not be as good as if you used the full data for everything. But your statements of the uncertainty in your predictions will be better (and probably wider).&lt;/p&gt;
@@ -492,11 +474,11 @@ Three
     
     <item>
       <title>Modeling Light Curves for Improved Classification of Astronomical Objects</title>
-      <link>/post/modeling-light-curves-for-improved-classification-of-astronomical-objects/</link>
+      <link>https://julianfaraway.github.io/post/modeling-light-curves-for-improved-classification-of-astronomical-objects/</link>
       <pubDate>Sun, 13 Mar 2016 00:00:00 +0000</pubDate>
-      <guid>/post/modeling-light-curves-for-improved-classification-of-astronomical-objects/</guid>
+      <guid>https://julianfaraway.github.io/post/modeling-light-curves-for-improved-classification-of-astronomical-objects/</guid>
       <description>&lt;p&gt;Sky surveys provide a wide-angle view of the universe. Instead of focusing on a single star or galaxy, they provide a snapshot of a wider portion of the sky. Their primary purpose is to search for asteroids, so they take a sequence of images over a short timespan: minutes or hours.  By seeing what has changed, the asteroid can be detected. But meanwhile, much further away, other things are changing. Most objects in the night sky do not change much on human timescales, but some of the most interesting stars and galaxies are performing for us. As the survey returns to the same location from time to time, we can see those objects that have changed. But how do we detect and categorise these objects? Here is a plot of four such objects:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/lceg.png&#34; alt=&#34;Plot of light curves&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://julianfaraway.github.io/images/lceg.png&#34; alt=&#34;Plot of light curves&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The first of the four is an example of an active galactic nucleus. The plot shows how the brightness of the object varies over time. The second plot shows a supernova – most of the time we see nothing because the galaxy is below the detection limit but briefly we see a spark of light for a few weeks. The third object is a flare – it’s mostly quiet but burst into life from time to time. The fourth object is like our sun – it varies a little but enough to be interesting (fortunately for us!).&lt;/p&gt;
 &lt;p&gt;These are examples of light curves. As technology improves, increasingly large numbers of these curves will be recorded. We need to quickly identify and categorise the interesting ones so that they can be rapidly followed up (before the show is over!). In 
 &lt;a href=&#34;https://doi.org/10.1002/sam.11305&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Modeling lightcurves for improved classification of astronomical objects&lt;/a&gt;, we describe how this can be done. You can also read about it on 
@@ -507,9 +489,9 @@ Three
     
     <item>
       <title>Statistics authors single no more</title>
-      <link>/post/statistics-authors-single-no-more/</link>
+      <link>https://julianfaraway.github.io/post/statistics-authors-single-no-more/</link>
       <pubDate>Wed, 09 Dec 2015 00:00:00 +0000</pubDate>
-      <guid>/post/statistics-authors-single-no-more/</guid>
+      <guid>https://julianfaraway.github.io/post/statistics-authors-single-no-more/</guid>
       <description>&lt;p&gt;While looking at tables of contents for journals and CVs for job applications, it struck me that there are a lot of multi-author papers now. Just to check that I was not imagining it, I downloaded the tables of contents for JASA and JRSS-B for the years 2014, 2004, 1994, 1984 and 1974. I removed the comments, book reviews and corrections to focus just on the research articles. I counted the number of authors for each paper and here’s what I found:&lt;/p&gt;
 &lt;p&gt;Mean number of authors per article:&lt;/p&gt;
 &lt;table&gt;
@@ -582,48 +564,10 @@ Three
     </item>
     
     <item>
-      <title>Plotting Regression Datasets</title>
-      <link>/post/2015-07-23-r-rmarkdown/</link>
-      <pubDate>Fri, 09 Oct 2015 00:00:00 +0000</pubDate>
-      <guid>/post/2015-07-23-r-rmarkdown/</guid>
-      <description>
-
-
-&lt;p&gt;Consider a regression dataset with a response and several predictors. You want a single plot showing the response plotted against each of the predictors. You could use the pairs() but that also shows plots between the predictors. If there are more than a few predictors, there are too many plots to see any one of them clearly. Here’s a simple solution:&lt;/p&gt;
-&lt;p&gt;Here’s an example dataset:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;head(swiss)
-             Fertility Agriculture Examination Education Catholic Infant.Mortality
-Courtelary        80.2        17.0          15        12     9.96             22.2
-Delemont          83.1        45.1           6         9    84.84             22.2
-Franches-Mnt      92.5        39.7           5         5    93.40             20.2
-Moutier           85.8        36.5          12         7    33.77             20.3
-Neuveville        76.9        43.5          17        15     5.16             20.6
-Porrentruy        76.1        35.3           9         7    90.57             26.6&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now reorganise the data using the tidyr package so that there is one (x,y) pair on each line:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyr)
-rdf &amp;lt;- gather(swiss, variable, value, -Fertility)
-head(rdf)
-  Fertility    variable value
-1      80.2 Agriculture  17.0
-2      83.1 Agriculture  45.1
-3      92.5 Agriculture  39.7
-4      85.8 Agriculture  36.5
-5      76.9 Agriculture  43.5
-6      76.1 Agriculture  35.3&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Use ggplot2 to plot the response against each of the predictors (which are on different scales so
-we need to allow for that)&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(ggplot2)
-ggplot(rdf, aes(x=value,y=Fertility)) + geom_point() + facet_wrap(~ variable, scale=&amp;quot;free_x&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/2015-07-23-r-rmarkdown_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;We can elaborate as needed.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>GLM - An overused paradigm</title>
-      <link>/post/glm/</link>
+      <link>https://julianfaraway.github.io/post/glm/</link>
       <pubDate>Wed, 19 Aug 2015 00:00:00 +0000</pubDate>
-      <guid>/post/glm/</guid>
+      <guid>https://julianfaraway.github.io/post/glm/</guid>
       <description>&lt;p&gt;There are a very large number of books, articles and university courses with “Generalised Linear Models” (GLM) in the title. I even wrote such a book myself. But is the GLM paradigm really that useful?&lt;/p&gt;
 &lt;p&gt;The idea is that we can develop a general theory of estimation, inference and diagnostics that will apply to a wide class of models. We will avoid duplication of effort and synergies will arise across this class of models. The idea goes back to a 1972 paper in JRSS-B by Nelder and Wedderburn.&lt;/p&gt;
 &lt;p&gt;But what response distributions belong to the GLM family? The Gaussian (or normal) distribution is the most used in practice. But this is simply the linear model for which much more general and powerful results exist. The Gaussian gains nothing from the GLM perspective.&lt;/p&gt;
