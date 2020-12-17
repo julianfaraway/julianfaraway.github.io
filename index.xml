@@ -401,6 +401,23 @@ Three
     
     <item>
       <title>When small data beats big data</title>
+      <link>https://julianfaraway.github.io/post/when-small-data-beats-big-data/</link>
+      <pubDate>Thu, 29 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>https://julianfaraway.github.io/post/when-small-data-beats-big-data/</guid>
+      <description>&lt;p&gt;More data is always better? No - not always. Nicole Augustin and I have published a paper entitled 
+&lt;a href=&#34;https://julianfaraway.github.io/publication/smalldata/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;When Small Data beats Big Data&lt;/a&gt;. The main points are:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Quality beats quantity&lt;/strong&gt;. A high quality small dataset is often more informative than a biased larger dataset. Performance is a tradeoff between bias and variance. As the sample size increases, the variance decreases but the bias remains. You don&amp;rsquo;t need a huge amount of data to achieve an acceptably small variance so that small dataset with no bias due to careful sampling or a controlled experiment will beat the big garbage dump of a dataset. David beats Goliath with a well-aimed shot.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cost&lt;/strong&gt;. There is no free lunch. More data costs money - what did you think those power studies were for? But it&amp;rsquo;s not just the acquisition costs of data. Some procedures are computationally expensive and the cost increases at a faster than linear rate with data size. If you need your results now, you might do better with less data. Other costs of data are not financial. People value privacy - we should assign a cost to invading that privacy. We should avoid using more data than necessary to protect privacy.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Inference works better on small data&lt;/strong&gt;. Statisticians have spent years developing methods for inference on relatively small datasets. Unfortunately, most of these methods don&amp;rsquo;t work well with big data because the inference becomes unbelievably sharp. The reason for this is that most statistical methods do not allow for model uncertainty or unknown sampling biases. Machine learners do no better as their methods often fail to tackle the uncertainty problem at all. Until we learn how to express uncertainty in big data models, we might be better off sticking with small data.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Aggregation&lt;/strong&gt;. Sometimes we have the option of reducing a big individual level dataset to a smaller grouped dataset. Information may be lost by this aggregation but sometimes it can be beneficial. It reduces variation, needs simpler models and reduces privacy concerns.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Teaching&lt;/strong&gt;. Students now need to learn about big and small data methods. But where to start? Small data is easier to work with. It&amp;rsquo;s much simpler for students to understand both the principles and details of the computation without the technical overhead of big data. Students will need to learn big data methods sooner rather than later but it&amp;rsquo;s best to come into this with a good understanding of the ideas of uncertainty.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>When small data beats big data</title>
       <link>https://julianfaraway.github.io/publication/smalldata/</link>
       <pubDate>Thu, 29 Mar 2018 00:00:00 +0000</pubDate>
       <guid>https://julianfaraway.github.io/publication/smalldata/</guid>
