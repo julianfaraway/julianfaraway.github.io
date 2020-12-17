@@ -498,6 +498,25 @@ Three
     </item>
     
     <item>
+      <title>Confidence Bands for Smoothness</title>
+      <link>https://julianfaraway.github.io/post/confidence-bands-for-smoothness/</link>
+      <pubDate>Wed, 16 Mar 2016 00:00:00 +0000</pubDate>
+      <guid>https://julianfaraway.github.io/post/confidence-bands-for-smoothness/</guid>
+      <description>&lt;p&gt;In What’s wrong with simultaneous confidence bands, I discussed the deficiencies of standard confidence bands, but how can we do better? Suppose we have a Gaussian process for the curve with some mean and a covariance kernel:&lt;/p&gt;
+&lt;p&gt;$$
+k(x,x^\prime) = \sigma^2_f \exp \left( - {1 \over 2l^2} (x-x^\prime)^2 \right) + \sigma^2_n \delta(x - x^\prime)
+$$&lt;/p&gt;
+&lt;p&gt;where δ is a delta function. The three hyper parameters, $\sigma_f, \sigma_n$ and l control the appearance of the curve. We can put priors on these parameters along with a prior on the mean function and calculate the posterior using MCMC methods. The most important parameter l controls the smoothness of the curve. We can view the uncertainty in this smoothness by computing a 95% credible interval for this parameter and plot the two curves corresponding to the endpoints of this interval. The other parameters are set at the posterior means. An example of these bands can be seen in the figure:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://julianfaraway.github.io/images/cbsm.jpg&#34; alt=&#34;Plot of smoothness bands&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The solid line corresponds to the lower end of 95% interval for the smoothing parameter l giving a rougher fit while the dashed line is the upper end of the interval which is a smoother fit. We are fairly sure that the correct amount of smoothness lies between these two limits.&lt;/p&gt;
+&lt;p&gt;Notice this makes a big difference to how many peaks and valleys we see in the function. The uncertainty about these features is more interesting than any uncertainty about the vertical position of the curve expressed by the traditional bands.&lt;/p&gt;
+&lt;p&gt;You can read all the details in my article: 
+&lt;a href=&#34;https://julianfaraway.github.io/publication/confidence-bands/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Confidence bands for smoothness in nonparametric regression&lt;/a&gt; and also view the 
+&lt;a href=&#34;https://people.bath.ac.uk/jjf23/scb/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R code&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Modeling Light Curves for Improved Classification of Astronomical Objects</title>
       <link>https://julianfaraway.github.io/post/modeling-light-curves-for-improved-classification-of-astronomical-objects/</link>
       <pubDate>Sun, 13 Mar 2016 00:00:00 +0000</pubDate>
