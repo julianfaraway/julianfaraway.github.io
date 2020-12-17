@@ -30,10 +30,10 @@
   
     
   
-  <meta name="description" content="In What’s wrong with simultaneous confidence bands, I discussed the deficiencies of standard confidence bands, but how can we do better? Suppose we have a Gaussian process for the curve with some mean and a covariance kernel:">
+  <meta name="description" content="Here are some 95% confidence bands for a fitted curve shown on the same data. The first uses spline smoothing from the mgcv package while the second uses a loess smoother from the ggplot2 package.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://julianfaraway.github.io/post/confidence-bands-for-smoothness/">
+  <link rel="alternate" hreflang="en-us" href="https://julianfaraway.github.io/post/what-s-wrong-with-simultaneous-confidence-bands/">
 
   
 
@@ -252,7 +252,7 @@
   <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://julianfaraway.github.io/post/confidence-bands-for-smoothness/">
+  <link rel="canonical" href="https://julianfaraway.github.io/post/what-s-wrong-with-simultaneous-confidence-bands/">
 
   
   
@@ -268,15 +268,15 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Julian Faraway">
-  <meta property="og:url" content="https://julianfaraway.github.io/post/confidence-bands-for-smoothness/">
-  <meta property="og:title" content="Confidence Bands for Smoothness | Julian Faraway">
-  <meta property="og:description" content="In What’s wrong with simultaneous confidence bands, I discussed the deficiencies of standard confidence bands, but how can we do better? Suppose we have a Gaussian process for the curve with some mean and a covariance kernel:"><meta property="og:image" content="https://julianfaraway.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="og:url" content="https://julianfaraway.github.io/post/what-s-wrong-with-simultaneous-confidence-bands/">
+  <meta property="og:title" content="What&#39;s wrong with simultaneous confidence bands | Julian Faraway">
+  <meta property="og:description" content="Here are some 95% confidence bands for a fitted curve shown on the same data. The first uses spline smoothing from the mgcv package while the second uses a loess smoother from the ggplot2 package."><meta property="og:image" content="https://julianfaraway.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="https://julianfaraway.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2016-03-16T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2016-03-11T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-12-17T14:39:55&#43;00:00">
+    <meta property="article:modified_time" content="2020-12-17T14:59:10&#43;00:00">
   
 
   
@@ -300,12 +300,12 @@
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://julianfaraway.github.io/post/confidence-bands-for-smoothness/"
+    "@id": "https://julianfaraway.github.io/post/what-s-wrong-with-simultaneous-confidence-bands/"
   },
-  "headline": "Confidence Bands for Smoothness",
+  "headline": "What's wrong with simultaneous confidence bands",
   
-  "datePublished": "2016-03-16T00:00:00Z",
-  "dateModified": "2020-12-17T14:39:55Z",
+  "datePublished": "2016-03-11T00:00:00Z",
+  "dateModified": "2020-12-17T14:59:10Z",
   
   "author": {
     "@type": "Person",
@@ -320,7 +320,7 @@
       "url": "https://julianfaraway.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": "In What’s wrong with simultaneous confidence bands, I discussed the deficiencies of standard confidence bands, but how can we do better? Suppose we have a Gaussian process for the curve with some mean and a covariance kernel:"
+  "description": "Here are some 95% confidence bands for a fitted curve shown on the same data. The first uses spline smoothing from the mgcv package while the second uses a loess smoother from the ggplot2 package."
 }
 </script>
 
@@ -338,7 +338,7 @@
 
 
 
-  <title>Confidence Bands for Smoothness | Julian Faraway</title>
+  <title>What&#39;s wrong with simultaneous confidence bands | Julian Faraway</title>
 
 </head>
 
@@ -641,7 +641,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>Confidence Bands for Smoothness</h1>
+  <h1>What&#39;s wrong with simultaneous confidence bands</h1>
 
   
 
@@ -702,18 +702,14 @@
   <div class="article-container">
 
     <div class="article-style">
-      <p>In 
-<a href="https://julianfaraway.github.io/post/confidence-bands-for-smoothness" target="_blank" rel="noopener">What’s wrong with simultaneous confidence bands</a>, I discussed the deficiencies of standard confidence bands, but how can we do better? Suppose we have a Gaussian process for the curve with some mean and a covariance kernel:</p>
-<p>$$
-k(x,x^\prime) = \sigma^2_f \exp \left( - {1 \over 2l^2} (x-x^\prime)^2 \right) + \sigma^2_n \delta(x - x^\prime)
-$$</p>
-<p>where δ is a delta function. The three hyper parameters, $\sigma_f, \sigma_n$ and $l$ control the appearance of the curve. We can put priors on these parameters along with a prior on the mean function and calculate the posterior using MCMC methods. The most important parameter $l$ controls the smoothness of the curve. We can view the uncertainty in this smoothness by computing a 95% credible interval for this parameter and plot the two curves corresponding to the endpoints of this interval. The other parameters are set at the posterior means. An example of these bands can be seen in the figure:</p>
-<p><img src="/images/cbsm.jpg" alt="Plot of smoothness bands"></p>
-<p>The solid line corresponds to the lower end of 95% interval for the smoothing parameter $l$ giving a rougher fit while the dashed line is the upper end of the interval which is a smoother fit. We are fairly sure that the correct amount of smoothness lies between these two limits.</p>
-<p>Notice this makes a big difference to how many peaks and valleys we see in the function. The uncertainty about these features is more interesting than any uncertainty about the vertical position of the curve expressed by the traditional bands.</p>
-<p>You can read all the details in my article: 
-<a href="https://julianfaraway.github.io/publication/confidence-bands/" target="_blank" rel="noopener">Confidence bands for smoothness in nonparametric regression</a> and also view the 
-<a href="https://people.bath.ac.uk/jjf23/scb/" target="_blank" rel="noopener">R code</a>.</p>
+      <p>Here are some 95% confidence bands for a fitted curve shown on the same data. The first uses spline smoothing from the mgcv package while the second uses a loess smoother from the ggplot2 package.</p>
+<p><img src="/images/mgcvagn.jpg" alt="Plot of smoothness bands"></p>
+<p>If all you want is a graphical expression of the uncertainty in these two estimates, these are just fine. But suppose you want to check whether some proposed function fits entirely within the bands, then you will need to do more work. The bands above are pointwise meaning that the confidence statement is true at any given point but not true for the entire curve. For that, you will need simultaneous confidence bands. These are more work to produce and involve all sorts of intricate calculations. Hundreds of papers have been written on the topic because of the fascinating theoretical challenges it raises. I&rsquo;m responsible for a few of these papers myself.</p>
+<p>But are these bands really useful? Properly constructed, they may tell us there&rsquo;s a 95% chance that the bands capture the true curve. But what is the value in that? There will be some users who are interested in replacing the smooth fit with some particular parametric form, say a quadratic. Such users would be better off embedding their search within a family of increasingly complex alternatives and choosing accordingly. SCBs would not be an efficient strategy.</p>
+<p>In SCB papers that have a data example, the usual motivation is that the user is interested in whether some particular feature exists, say a secondary maximum, for example. But users looking for particular features are better off with a method designed to look for those features, such as SiZer.</p>
+<p>The greatest uncertainty is demonstrated by comparing the two figures above. How much smoothing should be applied? This makes a crucial difference to our interpretation. In the typical SCB construction, the amount of smoothing is chosen by some algorithm and the bands only reflect the uncertainty in the amplitude of the curves.</p>
+<p>We need bands that tell us about the uncertainty in the smoothing. I will explain how to do this in the next 
+<a href="https://julianfaraway.github.io/post/confidence-bands-for-smoothness" target="_blank" rel="noopener">blog post</a>.</p>
 
     </div>
 
@@ -737,7 +733,7 @@ $$</p>
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://julianfaraway.github.io/post/confidence-bands-for-smoothness/&amp;text=Confidence%20Bands%20for%20Smoothness" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://julianfaraway.github.io/post/what-s-wrong-with-simultaneous-confidence-bands/&amp;text=What&amp;#39;s%20wrong%20with%20simultaneous%20confidence%20bands" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -750,7 +746,7 @@ $$</p>
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://julianfaraway.github.io/post/confidence-bands-for-smoothness/&amp;t=Confidence%20Bands%20for%20Smoothness" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://julianfaraway.github.io/post/what-s-wrong-with-simultaneous-confidence-bands/&amp;t=What&amp;#39;s%20wrong%20with%20simultaneous%20confidence%20bands" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -763,7 +759,7 @@ $$</p>
       
       
       <li>
-        <a href="mailto:?subject=Confidence%20Bands%20for%20Smoothness&amp;body=https://julianfaraway.github.io/post/confidence-bands-for-smoothness/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=What&amp;#39;s%20wrong%20with%20simultaneous%20confidence%20bands&amp;body=https://julianfaraway.github.io/post/what-s-wrong-with-simultaneous-confidence-bands/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -776,7 +772,7 @@ $$</p>
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://julianfaraway.github.io/post/confidence-bands-for-smoothness/&amp;title=Confidence%20Bands%20for%20Smoothness" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://julianfaraway.github.io/post/what-s-wrong-with-simultaneous-confidence-bands/&amp;title=What&amp;#39;s%20wrong%20with%20simultaneous%20confidence%20bands" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -789,7 +785,7 @@ $$</p>
       
       
       <li>
-        <a href="whatsapp://send?text=Confidence%20Bands%20for%20Smoothness%20https://julianfaraway.github.io/post/confidence-bands-for-smoothness/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=What&amp;#39;s%20wrong%20with%20simultaneous%20confidence%20bands%20https://julianfaraway.github.io/post/what-s-wrong-with-simultaneous-confidence-bands/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -802,7 +798,7 @@ $$</p>
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://julianfaraway.github.io/post/confidence-bands-for-smoothness/&amp;title=Confidence%20Bands%20for%20Smoothness" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://julianfaraway.github.io/post/what-s-wrong-with-simultaneous-confidence-bands/&amp;title=What&amp;#39;s%20wrong%20with%20simultaneous%20confidence%20bands" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
