@@ -28,5 +28,21 @@
       <description></description>
     </item>
     
+    <item>
+      <title>Confidence bands for smoothness in nonparametric regression</title>
+      <link>https://julianfaraway.github.io/publication/confidence-bands/</link>
+      <pubDate>Sun, 10 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>https://julianfaraway.github.io/publication/confidence-bands/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Does data splitting improve prediction?</title>
+      <link>https://julianfaraway.github.io/publication/data-splitting/</link>
+      <pubDate>Wed, 29 Oct 2014 00:00:00 +0000</pubDate>
+      <guid>https://julianfaraway.github.io/publication/data-splitting/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

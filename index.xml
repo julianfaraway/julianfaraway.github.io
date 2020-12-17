@@ -496,6 +496,14 @@ Three
     </item>
     
     <item>
+      <title>Confidence bands for smoothness in nonparametric regression</title>
+      <link>https://julianfaraway.github.io/publication/confidence-bands/</link>
+      <pubDate>Sun, 10 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>https://julianfaraway.github.io/publication/confidence-bands/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Statistics authors single no more</title>
       <link>https://julianfaraway.github.io/post/statistics-authors-single-no-more/</link>
       <pubDate>Wed, 09 Dec 2015 00:00:00 +0000</pubDate>
@@ -583,6 +591,14 @@ Three
 &lt;p&gt;So there are only two important members of the GLM family: the binomial and the Poisson. Even here we must be careful because large chunks of the theory and practice for these models is specific to one or the other. The GLM paradigm does tell us one way to estimate and do inference for these models. But there other ways to do these things.&lt;/p&gt;
 &lt;p&gt;Statisticians love widely applicable theories – but perhaps a little too much. GLM is a nice, useful theory but the paradigm has become too dominant in the way people learn or are taught about these kind of models.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Does data splitting improve prediction?</title>
+      <link>https://julianfaraway.github.io/publication/data-splitting/</link>
+      <pubDate>Wed, 29 Oct 2014 00:00:00 +0000</pubDate>
+      <guid>https://julianfaraway.github.io/publication/data-splitting/</guid>
+      <description></description>
     </item>
     
   </channel>
