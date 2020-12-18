@@ -708,7 +708,7 @@
 k(x,x^\prime) = \sigma^2_f \exp \left( - {1 \over 2l^2} (x-x^\prime)^2 \right) + \sigma^2_n \delta(x - x^\prime)
 $$</p>
 <p>where δ is a delta function. The three hyper parameters, $\sigma_f, \sigma_n$ and $l$ control the appearance of the curve. We can put priors on these parameters along with a prior on the mean function and calculate the posterior using MCMC methods. The most important parameter $l$ controls the smoothness of the curve. We can view the uncertainty in this smoothness by computing a 95% credible interval for this parameter and plot the two curves corresponding to the endpoints of this interval. The other parameters are set at the posterior means. An example of these bands can be seen in the figure:</p>
-<p><img src="/images/cbsm.jpg" alt="Plot of smoothness bands"></p>
+<p><img src="/static/post/images/cbsm.jpg" alt="Plot of smoothness bands"></p>
 <p>The solid line corresponds to the lower end of 95% interval for the smoothing parameter $l$ giving a rougher fit while the dashed line is the upper end of the interval which is a smoother fit. We are fairly sure that the correct amount of smoothness lies between these two limits.</p>
 <p>Notice this makes a big difference to how many peaks and valleys we see in the function. The uncertainty about these features is more interesting than any uncertainty about the vertical position of the curve expressed by the traditional bands.</p>
 <p>You can read all the details in my article: 
