@@ -503,12 +503,50 @@ Three
       <pubDate>Wed, 16 Mar 2016 00:00:00 +0000</pubDate>
       <guid>https://julianfaraway.github.io/post/confidence-bands-for-smoothness/</guid>
       <description>&lt;p&gt;In 
-&lt;a href=&#34;https://julianfaraway.github.io/post/confidence-bands-for-smoothness&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;What’s wrong with simultaneous confidence bands&lt;/a&gt;, I discussed the deficiencies of standard confidence bands, but how can we do better? Suppose we have a Gaussian process for the curve with some mean and a covariance kernel:&lt;/p&gt;
+&lt;a href=&#34;https://julianfaraway.github.io/post/what-s-wrong-with-simultaneous-confidence-bands&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;What’s wrong with simultaneous confidence bands&lt;/a&gt;, I discussed the deficiencies of standard confidence bands, but how can we do better? Suppose we have a Gaussian process for the curve with some mean and a covariance kernel:&lt;/p&gt;
 &lt;p&gt;$$
 k(x,x^\prime) = \sigma^2_f \exp \left( - {1 \over 2l^2} (x-x^\prime)^2 \right) + \sigma^2_n \delta(x - x^\prime)
 $$&lt;/p&gt;
 &lt;p&gt;where δ is a delta function. The three hyper parameters, $\sigma_f, \sigma_n$ and $l$ control the appearance of the curve. We can put priors on these parameters along with a prior on the mean function and calculate the posterior using MCMC methods. The most important parameter $l$ controls the smoothness of the curve. We can view the uncertainty in this smoothness by computing a 95% credible interval for this parameter and plot the two curves corresponding to the endpoints of this interval. The other parameters are set at the posterior means. An example of these bands can be seen in the figure:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://julianfaraway.github.io/images/cbsm.jpg&#34; alt=&#34;Plot of smoothness bands&#34;&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-plot-of-smoothness-bands&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://julianfaraway.github.io/media/cbsm.jpg&#34; data-caption=&#34;Plot of smoothness bands&#34;&gt;
+
+
+  &lt;img src=&#34;https://julianfaraway.github.io/media/cbsm.jpg&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Plot of smoothness bands
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
 &lt;p&gt;The solid line corresponds to the lower end of 95% interval for the smoothing parameter $l$ giving a rougher fit while the dashed line is the upper end of the interval which is a smoother fit. We are fairly sure that the correct amount of smoothness lies between these two limits.&lt;/p&gt;
 &lt;p&gt;Notice this makes a big difference to how many peaks and valleys we see in the function. The uncertainty about these features is more interesting than any uncertainty about the vertical position of the curve expressed by the traditional bands.&lt;/p&gt;
 &lt;p&gt;You can read all the details in my article: 
@@ -523,7 +561,45 @@ $$&lt;/p&gt;
       <pubDate>Sun, 13 Mar 2016 00:00:00 +0000</pubDate>
       <guid>https://julianfaraway.github.io/post/modeling-light-curves-for-improved-classification-of-astronomical-objects/</guid>
       <description>&lt;p&gt;Sky surveys provide a wide-angle view of the universe. Instead of focusing on a single star or galaxy, they provide a snapshot of a wider portion of the sky. Their primary purpose is to search for asteroids, so they take a sequence of images over a short timespan: minutes or hours.  By seeing what has changed, the asteroid can be detected. But meanwhile, much further away, other things are changing. Most objects in the night sky do not change much on human timescales, but some of the most interesting stars and galaxies are performing for us. As the survey returns to the same location from time to time, we can see those objects that have changed. But how do we detect and categorise these objects? Here is a plot of four such objects:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://julianfaraway.github.io/images/lceg.png&#34; alt=&#34;Plot of light curves&#34;&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-plot-of-light-curves&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://julianfaraway.github.io/media/lceg.png&#34; data-caption=&#34;Plot of light curves&#34;&gt;
+
+
+  &lt;img src=&#34;https://julianfaraway.github.io/media/lceg.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Plot of light curves
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
 &lt;p&gt;The first of the four is an example of an active galactic nucleus. The plot shows how the brightness of the object varies over time. The second plot shows a supernova – most of the time we see nothing because the galaxy is below the detection limit but briefly we see a spark of light for a few weeks. The third object is a flare – it’s mostly quiet but burst into life from time to time. The fourth object is like our sun – it varies a little but enough to be interesting (fortunately for us!).&lt;/p&gt;
 &lt;p&gt;These are examples of light curves. As technology improves, increasingly large numbers of these curves will be recorded. We need to quickly identify and categorise the interesting ones so that they can be rapidly followed up (before the show is over!). In 
 &lt;a href=&#34;https://doi.org/10.1002/sam.11305&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Modeling lightcurves for improved classification of astronomical objects&lt;/a&gt;, we describe how this can be done. You can also read about it on 
@@ -538,7 +614,84 @@ $$&lt;/p&gt;
       <pubDate>Fri, 11 Mar 2016 00:00:00 +0000</pubDate>
       <guid>https://julianfaraway.github.io/post/what-s-wrong-with-simultaneous-confidence-bands/</guid>
       <description>&lt;p&gt;Here are some 95% confidence bands for a fitted curve shown on the same data. The first uses spline smoothing from the mgcv package while the second uses a loess smoother from the ggplot2 package.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://julianfaraway.github.io/images/mgcvagn.png&#34; alt=&#34;Plot of smoothness bands&#34;&gt;&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-plot-of-smoothness-bands-using-mgcv&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://julianfaraway.github.io/media/mgcvagn.png&#34; data-caption=&#34;Plot of smoothness bands using mgcv&#34;&gt;
+
+
+  &lt;img src=&#34;https://julianfaraway.github.io/media/mgcvagn.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Plot of smoothness bands using mgcv
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-plot-of-smoothness-bands-using-loess&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://julianfaraway.github.io/media/scblow.png&#34; data-caption=&#34;Plot of smoothness bands using loess&#34;&gt;
+
+
+  &lt;img src=&#34;https://julianfaraway.github.io/media/scblow.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Plot of smoothness bands using loess
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+&lt;/p&gt;
 &lt;p&gt;If all you want is a graphical expression of the uncertainty in these two estimates, these are just fine. But suppose you want to check whether some proposed function fits entirely within the bands, then you will need to do more work. The bands above are pointwise meaning that the confidence statement is true at any given point but not true for the entire curve. For that, you will need simultaneous confidence bands. These are more work to produce and involve all sorts of intricate calculations. Hundreds of papers have been written on the topic because of the fascinating theoretical challenges it raises. I&amp;rsquo;m responsible for a few of these papers myself.&lt;/p&gt;
 &lt;p&gt;But are these bands really useful? Properly constructed, they may tell us there&amp;rsquo;s a 95% chance that the bands capture the true curve. But what is the value in that? There will be some users who are interested in replacing the smooth fit with some particular parametric form, say a quadratic. Such users would be better off embedding their search within a family of increasingly complex alternatives and choosing accordingly. SCBs would not be an efficient strategy.&lt;/p&gt;
 &lt;p&gt;In SCB papers that have a data example, the usual motivation is that the user is interested in whether some particular feature exists, say a secondary maximum, for example. But users looking for particular features are better off with a method designed to look for those features, such as SiZer.&lt;/p&gt;
@@ -629,6 +782,51 @@ $$&lt;/p&gt;
 &lt;p&gt;Now there are several good reasons not to go it alone. If you write a genuine applications paper, you will be collaborating with a scientist from another field who would be a natural co-author. But most of the articles in these two journals are methodological with Statistical authors. In any case this doesn’t explain the trend. It’s also possible that your co-authors bring different skills to the table, theoretical or computational. It’s also nice to have someone to discuss the paper. You correct each other’s errors and misconceptions. You learn from each other. The social aspect of the collaboration can make you more productive. But that’s also been true in the past. You can point to the greater ease of long distance collaborations using the internet but I suspect there is a stronger cause.&lt;/p&gt;
 &lt;p&gt;The academic world is increasingly driven by metrics. You will get far more credit for writing four articles, each with four authors than for producing one single author paper. So there’s a huge incentive to collaborate. This is good when the co-authors have clearly distinct skills but often they are just other statisticians, much like you.&lt;/p&gt;
 &lt;p&gt;But something has been lost. Most good papers have one main idea and only one person can have that idea. Sure, other people can help refine that idea and turn it into a paper but somewhere in that list of multiple authors there is that one person who had the idea. Truly creative and innovative ideas start out sounding a bit crazy, ill-formed and speculative. If you discuss the idea with your peers, they will back away since it won’t sound like something that will reliably result in a publishable paper. Don’t even think of submitting a grant proposal. So you work on the idea and turn it into flesh. By that time, you don’t need co-authors. Working as a group is a reliable way to get work published but for truly creative work, you need to go it alone.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Plotting Regression Datasets</title>
+      <link>https://julianfaraway.github.io/post/2015-07-23-r-rmarkdown/</link>
+      <pubDate>Fri, 09 Oct 2015 00:00:00 +0000</pubDate>
+      <guid>https://julianfaraway.github.io/post/2015-07-23-r-rmarkdown/</guid>
+      <description>
+
+
+&lt;p&gt;Consider a regression dataset with a response and several predictors. You want a single plot showing the response plotted against each of the predictors. You could use the pairs() but that also shows plots between the predictors. If there are more than a few predictors, there are too many plots to see any one of them clearly. Here’s a simple solution:&lt;/p&gt;
+&lt;p&gt;Here’s an example dataset:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;head(swiss)
+             Fertility Agriculture Examination Education Catholic
+Courtelary        80.2        17.0          15        12     9.96
+Delemont          83.1        45.1           6         9    84.84
+Franches-Mnt      92.5        39.7           5         5    93.40
+Moutier           85.8        36.5          12         7    33.77
+Neuveville        76.9        43.5          17        15     5.16
+Porrentruy        76.1        35.3           9         7    90.57
+             Infant.Mortality
+Courtelary               22.2
+Delemont                 22.2
+Franches-Mnt             20.2
+Moutier                  20.3
+Neuveville               20.6
+Porrentruy               26.6&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now reorganise the data using the tidyr package so that there is one (x,y) pair on each line:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyr)
+rdf &amp;lt;- gather(swiss, variable, value, -Fertility)
+head(rdf)
+  Fertility    variable value
+1      80.2 Agriculture  17.0
+2      83.1 Agriculture  45.1
+3      92.5 Agriculture  39.7
+4      85.8 Agriculture  36.5
+5      76.9 Agriculture  43.5
+6      76.1 Agriculture  35.3&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Use ggplot2 to plot the response against each of the predictors (which are on different scales so
+we need to allow for that)&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(ggplot2)
+ggplot(rdf, aes(x=value,y=Fertility)) + geom_point() + facet_wrap(~ variable, scale=&amp;quot;free_x&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://julianfaraway.github.io/post/2015-07-23-r-rmarkdown_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;We can elaborate as needed.&lt;/p&gt;
 </description>
     </item>
     
