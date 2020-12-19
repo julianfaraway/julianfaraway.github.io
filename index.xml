@@ -86,6 +86,14 @@
     
     <item>
       <title>Linear Models with R</title>
+      <link>https://julianfaraway.github.io/project/elm/</link>
+      <pubDate>Tue, 15 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://julianfaraway.github.io/project/elm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linear Models with R</title>
       <link>https://julianfaraway.github.io/project/lmr/</link>
       <pubDate>Tue, 15 Dec 2020 00:00:00 +0000</pubDate>
       <guid>https://julianfaraway.github.io/project/lmr/</guid>
@@ -226,14 +234,6 @@ fontsize: 10pt
 &lt;li&gt;Local Data. All too many expositions of R use overworn example datasets such as mtcars. Find some datasets from the country of the workshop. The participants will find this far more interesting and will suggest different ways to analyze the data. This will demonstrate how R can be used to turn data into knowledge.&lt;/li&gt;
 &lt;/ol&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Extending the Linear Model</title>
-      <link>https://julianfaraway.github.io/project/elm/</link>
-      <pubDate>Sun, 15 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>https://julianfaraway.github.io/project/elm/</guid>
-      <description></description>
     </item>
     
     <item>
