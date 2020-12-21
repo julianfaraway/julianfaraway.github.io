@@ -33,17 +33,27 @@
   </url>
   
   <url>
-    <loc>https://julianfaraway.github.io/project/glmm/</loc>
+    <loc>https://julianfaraway.github.io/tag/book/</loc>
     <lastmod>2020-12-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://julianfaraway.github.io/project/lmp/</loc>
+    <loc>https://julianfaraway.github.io/book/</loc>
     <lastmod>2020-12-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://julianfaraway.github.io/project/lmr/</loc>
+    <loc>https://julianfaraway.github.io/book/glmm/</loc>
+    <lastmod>2020-12-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://julianfaraway.github.io/book/lmp/</loc>
+    <lastmod>2020-12-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://julianfaraway.github.io/book/lmr/</loc>
     <lastmod>2020-12-15T00:00:00+00:00</lastmod>
   </url>
   
@@ -53,7 +63,12 @@
   </url>
   
   <url>
-    <loc>https://julianfaraway.github.io/tag/r/</loc>
+    <loc>https://julianfaraway.github.io/tag/research/</loc>
+    <lastmod>2020-12-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://julianfaraway.github.io/project/mongolia/</loc>
     <lastmod>2020-12-15T00:00:00+00:00</lastmod>
   </url>
   
@@ -78,7 +93,7 @@
   </url>
   
   <url>
-    <loc>https://julianfaraway.github.io/project/brinla/</loc>
+    <loc>https://julianfaraway.github.io/book/brinla/</loc>
     <lastmod>2020-08-28T00:00:00+00:00</lastmod>
   </url>
   

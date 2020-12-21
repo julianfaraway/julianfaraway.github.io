@@ -78,25 +78,33 @@
     
     <item>
       <title>Extending the Linear Model with R</title>
-      <link>https://julianfaraway.github.io/project/glmm/</link>
+      <link>https://julianfaraway.github.io/book/glmm/</link>
       <pubDate>Tue, 15 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://julianfaraway.github.io/project/glmm/</guid>
+      <guid>https://julianfaraway.github.io/book/glmm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linear Models with Python</title>
-      <link>https://julianfaraway.github.io/project/lmp/</link>
+      <link>https://julianfaraway.github.io/book/lmp/</link>
       <pubDate>Tue, 15 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://julianfaraway.github.io/project/lmp/</guid>
+      <guid>https://julianfaraway.github.io/book/lmp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linear Models with R</title>
-      <link>https://julianfaraway.github.io/project/lmr/</link>
+      <link>https://julianfaraway.github.io/book/lmr/</link>
       <pubDate>Tue, 15 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://julianfaraway.github.io/project/lmr/</guid>
+      <guid>https://julianfaraway.github.io/book/lmr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Statistics training in Mongolia</title>
+      <link>https://julianfaraway.github.io/project/mongolia/</link>
+      <pubDate>Tue, 15 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://julianfaraway.github.io/project/mongolia/</guid>
       <description></description>
     </item>
     
@@ -194,9 +202,9 @@ fontsize: 10pt
     
     <item>
       <title>Bayesian Regression Modeling with INLA</title>
-      <link>https://julianfaraway.github.io/project/brinla/</link>
+      <link>https://julianfaraway.github.io/book/brinla/</link>
       <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>https://julianfaraway.github.io/project/brinla/</guid>
+      <guid>https://julianfaraway.github.io/book/brinla/</guid>
       <description></description>
     </item>
     
