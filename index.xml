@@ -7,7 +7,7 @@
     <description>Julian Faraway</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://julianfaraway.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://julianfaraway.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Julian Faraway</title>
       <link>https://julianfaraway.github.io/</link>
     </image>
@@ -73,6 +73,42 @@
 &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;shortcodes&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Further talk details can easily be added to this page using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Converting from Bookdown to Quarto</title>
+      <link>https://julianfaraway.github.io/post/converting-from-bookdown-to-quarto/</link>
+      <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
+      <guid>https://julianfaraway.github.io/post/converting-from-bookdown-to-quarto/</guid>
+      <description>&lt;p&gt;Two years ago, I 
+&lt;a href=&#34;https://julianfaraway.github.io/post/converting-to-accessible-lecture-notes/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;converted my lecture notes to Bookdown&lt;/a&gt;. I have been following the development of 
+&lt;a href=&#34;https://quarto.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Quarto&lt;/a&gt; with interest. Although Bookdown is not going away, it does seem that future developments will be based on Quarto. For this reason, I decided to convert my lecture notes to Quarto. Here&amp;rsquo;s my experience.&lt;/p&gt;
+&lt;p&gt;I installed Quarto. I started with a 
+&lt;a href=&#34;https://www.openscapes.org/blog/2022/07/21/quarto-migrate/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;conversion guide&lt;/a&gt; written by
+Stefanie Butland and Ileana Fenwick. I renamed by Rmd files to qmd files and moved
+some information around in a couple of config files as described in the guide.
+Within about 20 minutes, I had the whole book rendered. Great - how easy was that?
+Unfortunately, on examining the book, I realised I had more work to do.&lt;/p&gt;
+&lt;p&gt;The first problem was with the displayed equations. Bookdown could be finicky
+about the placement of the delimiting &lt;code&gt;$$&lt;/code&gt;&amp;rsquo;s and my labels were all inside the
+delimiters. Quarto is more fussy about the layout - you need something like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$$
+\your \latex \stuff \here
+$$ {#eq-yourlabel}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Fortunately, getting the equations to preview within the editor was a reliable indication that I had done it right - there was no need to keep recompiling to check my work.&lt;/p&gt;
+&lt;p&gt;The second problem was the cross referencing. Previously, for a figure, you would have the label in the &lt;code&gt;{r myfig}&lt;/code&gt; chunk and refer to it as &lt;code&gt;Figure \@ref(fig:myfig)&lt;/code&gt; but this becomes:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{verbatim}&#34;&gt;```{r}
+#| label: fig-myfig
+plot(x,y)
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;and is referred to as &lt;code&gt;@fig-myfig&lt;/code&gt; which will render as something like &lt;code&gt;Figure 5.1&lt;/code&gt; so you&amp;rsquo;ll need to delete the extra &amp;ldquo;Figure &amp;quot; from your text. You will need to change the equation, table, section etc. crossreferences also.&lt;/p&gt;
+&lt;p&gt;The third problem required me to reformat some R chunks. As seen above, the desired format for the option in R chunks has changed to have these each listed on a seperate line, prefixed with a &lt;code&gt;#|&lt;/code&gt;. This does make sense and the old format still works - sometimes. But if you have some figures with multiple plots or other features, you will have to convert. The new multicolumn setup is nice but you will need to do some editing.&lt;/p&gt;
+&lt;p&gt;Previously, Bookdown allowed you to load some R code before running each chapter using &lt;code&gt;before_chapter_script:&lt;/code&gt; but I could not get this to work in Quarto. I had to put this in the &lt;code&gt;.Rprofile&lt;/code&gt; to get this working (I tend to avoid using .Rprofile for reproducibility reasons).&lt;/p&gt;
+&lt;p&gt;Someone with better scripting skills than me could write a conversion script to deal with many of these problems (although some hand-editing would still be necessary). I don&amp;rsquo;t think anyone has done this yet.&lt;/p&gt;
+&lt;p&gt;Although it took a bit more work than I had initially thought, I am pleased with the result. The design of Quarto is better than Bookdown and it already has some nice features that I want to try. I am also looking forward to a more consistent syntax across the other R markdown documents such as presentations, websites and scripts that I commonly use.&lt;/p&gt;
 </description>
     </item>
     
@@ -347,15 +383,15 @@ $$&lt;/p&gt;
 {{% fragment %}} Three {{% /fragment %}}
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
-One
+&lt;span class=&#34;fragment &#34; &gt;
+   One 
 &lt;/span&gt;
 &lt;span class=&#34;fragment &#34; &gt;
-&lt;strong&gt;Two&lt;/strong&gt;
+   **Two** 
 &lt;/span&gt;
 &lt;span class=&#34;fragment &#34; &gt;
-Three
-&lt;/span&gt;&lt;/p&gt;
+   Three 
+&lt;/span&gt;
 &lt;hr&gt;
 &lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
 &lt;ul&gt;
