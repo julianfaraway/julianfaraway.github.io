@@ -755,7 +755,8 @@ delimiters. Quarto is more fussy about the layout - you need something like this
 \your \latex \stuff \here
 $$ {#eq-yourlabel}
 </code></pre>
-<p>Fortunately, getting the equations to preview within the editor was a reliable indication that I had done it right - there was no need to keep recompiling to check my work.</p>
+<p>In particular, you need to have the <code>$$</code>&rsquo;s on a new line.
+Fortunately, getting the equations to preview within the editor was a reliable indication that I had done it right - there was no need to keep recompiling to check my work.</p>
 <p>The second problem was the cross referencing. Previously, for a figure, you would have the label in the <code>{r myfig}</code> chunk and refer to it as <code>Figure \@ref(fig:myfig)</code> but this becomes:</p>
 <pre><code class="language-{verbatim}">```{r}
 #| label: fig-myfig

@@ -33,7 +33,8 @@ delimiters. Quarto is more fussy about the layout - you need something like this
 \your \latex \stuff \here
 $$ {#eq-yourlabel}
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Fortunately, getting the equations to preview within the editor was a reliable indication that I had done it right - there was no need to keep recompiling to check my work.&lt;/p&gt;
+&lt;p&gt;In particular, you need to have the &lt;code&gt;$$&lt;/code&gt;&amp;rsquo;s on a new line.
+Fortunately, getting the equations to preview within the editor was a reliable indication that I had done it right - there was no need to keep recompiling to check my work.&lt;/p&gt;
 &lt;p&gt;The second problem was the cross referencing. Previously, for a figure, you would have the label in the &lt;code&gt;{r myfig}&lt;/code&gt; chunk and refer to it as &lt;code&gt;Figure \@ref(fig:myfig)&lt;/code&gt; but this becomes:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-{verbatim}&#34;&gt;```{r}
 #| label: fig-myfig
