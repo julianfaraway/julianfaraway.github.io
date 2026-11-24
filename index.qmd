@@ -1,6 +1,8 @@
 ---
 title: "Julian Faraway"
-subtitle: "Professor of Statistics"
+subtitle: |
+  Professor of Statistics<br>
+  [Department of Mathematical Sciences](http://www.bath.ac.uk/math-sci/), [University of Bath](http://bath.ac.uk)
 image: media/avatar.jpg
 toc: false
 about:
@@ -21,9 +23,7 @@ about:
       href: https://github.com/julianfaraway
 ---
 
-[Department of Mathematical Sciences](http://www.bath.ac.uk/math-sci/), [University of Bath](http://bath.ac.uk)
-
-## Biography
+## Research
 
 My research is on the application of Statistics. My current interests are in Wastewater-based Epidemiology where I am co-director of [CWBE](https://cwbe.ac.uk/)
 
