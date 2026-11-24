@@ -1,8 +1,0 @@
----
-title: "Statistics training in Mongolia"
-date: 2020-12-15
-description: "Statistics and Data Science training to build research capacity to address societal problems in Mongolia"
-image: featured.png
----
-
-I have a [EPSRC GCRF grant](https://gow.epsrc.ukri.org/NGBOViewGrant.aspx?GrantRef=EP/T003707/1){target="_blank" rel="noopener"} for statistics training in Mongolia. We have a particular interest in the effects of air pollution on health. We delivered a [workshop in Ulaanbaatar](https://www.bath.ac.uk/announcements/delivering-training-for-data-informed-policy-in-ulaanbaatar/){target="_blank" rel="noopener"} in May 2019. You can see the [training materials](https://people.bath.ac.uk/td314/data_sprint.html){target="_blank" rel="noopener"} and read more in the [report](https://t.co/Jh2uIIUVWR?amp=1){target="_blank" rel="noopener"}. I have been working with [Andreas Kyprianou](https://people.bath.ac.uk/ak257){target="_blank" rel="noopener"} who has [longstanding connections](https://people.bath.ac.uk/ak257/#Mongolia){target="_blank" rel="noopener"} to Mongolia.

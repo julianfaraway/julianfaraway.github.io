@@ -4,7 +4,7 @@ description: "More data is always better? No - not always. Nicole Augustin and I
 Quality beats quantity."
 ---
 
-More data is always better? No - not always. Nicole Augustin and I have published a paper entitled [When Small Data beats Big Data](https://julianfaraway.github.io/publication/smalldata/){target="_blank" rel="noopener"}. The main points are:
+More data is always better? No - not always. Nicole Augustin and I have published a paper entitled [When Small Data beats Big Data](https://doi.org/10.1016/j.spl.2018.02.031){target="_blank" rel="noopener"}. The main points are:
 
 1.  **Quality beats quantity**. A high quality small dataset is often more informative than a biased larger dataset. Performance is a tradeoff between bias and variance. As the sample size increases, the variance decreases but the bias remains. You don’t need a huge amount of data to achieve an acceptably small variance so that small dataset with no bias due to careful sampling or a controlled experiment will beat the big garbage dump of a dataset. David beats Goliath with a well-aimed shot.
 2.  **Cost**. There is no free lunch. More data costs money - what did you think those power studies were for? But it’s not just the acquisition costs of data. Some procedures are computationally expensive and the cost increases at a faster than linear rate with data size. If you need your results now, you might do better with less data. Other costs of data are not financial. People value privacy - we should assign a cost to invading that privacy. We should avoid using more data than necessary to protect privacy.

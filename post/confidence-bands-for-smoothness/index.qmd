@@ -18,4 +18,4 @@ The solid line corresponds to the lower end of 95% interval for the smoothing pa
 
 Notice this makes a big difference to how many peaks and valleys we see in the function. The uncertainty about these features is more interesting than any uncertainty about the vertical position of the curve expressed by the traditional bands.
 
-You can read all the details in my article: [Confidence bands for smoothness in nonparametric regression](https://julianfaraway.github.io/publication/confidence-bands/){target="_blank" rel="noopener"} and also view the [R code](https://people.bath.ac.uk/jjf23/scb/){target="_blank" rel="noopener"}.
+You can read all the details in my article: [Confidence bands for smoothness in nonparametric regression](https://onlinelibrary.wiley.com/doi/full/10.1002/sta4.100){target="_blank" rel="noopener"} and also view the [R code](https://people.bath.ac.uk/jjf23/scb/){target="_blank" rel="noopener"}.

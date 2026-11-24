@@ -1,8 +1,0 @@
----
-title: "Anxiety and Depression"
-date: 2018-12-22
-description: "Using healthcare records to optimise treatments"
-image: featured.jpg
----
-
-Depression and anxiety are set to be leading causes of disability in high income countries by 2030, and currently cost the UK economy £9 billion a year. Improving access to psychological therapies (IAPT) is a national programme aimed at reducing this disability burden by increasing the availability of ‘talking therapies’ on the NHS. I am working with [Kate Button](https://researchportal.bath.ac.uk/en/persons/katherine-button){target="_blank" rel="noopener"} and PhD student, Clarissa Bauer-Staub on a project to improve the allocation of psychological treaments for depression. We are working with Bath company, [Mayden](https://mayden.co.uk/){target="_blank" rel="noopener"}. See our [preprint](https://www.medrxiv.org/content/10.1101/2020.08.15.20175562v2){target="_blank" rel="noopener"} on the effects of Covid-19 on IAPT.

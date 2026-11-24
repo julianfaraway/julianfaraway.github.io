@@ -16,12 +16,8 @@ website:
         text: Home
       - href: post/index.qmd
         text: Posts
-      - href: project/index.qmd
-        text: Projects
       - href: book/index.qmd
         text: Books
-      - href: publication/index.qmd
-        text: Publications
     right:
       - icon: github
         href: https://github.com/julianfaraway

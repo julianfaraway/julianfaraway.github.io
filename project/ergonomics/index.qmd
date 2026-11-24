@@ -1,8 +1,0 @@
----
-title: "Ergonomics"
-date: 2006-12-21
-description: "Human motion modelling with automotive applications"
-image: featured.png
----
-
-Formerly, I worked at the [Human Motion Simulation](https://www.humosim.org){target="_blank" rel="noopener"} at the [University of Michigan](https://www.umich.edu){target="_blank" rel="noopener"}. You can read more about my work [here](https://people.bath.ac.uk/jjf23/humosim/){target="_blank" rel="noopener"}
