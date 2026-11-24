@@ -33,3 +33,6 @@ format:
       dark: darkly
     toc: true
     css: styles.css
+    grid:
+      body-width: 1100px
+      margin-width: 0px
