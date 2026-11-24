@@ -25,7 +25,9 @@ about:
 
 ## Biography
 
-My research is on the interface between the theory and application of Statistics. I have worked on a wide range of statistical problems ranging over air pollution, anxiety and depression, astronomy, athletics, concrete, cosmetics, flooding, fungicides, fuel filters, marketing of cars, obesity and schizophrenia. I have also served as a consultant to industry on statistical issues.
+My research is on the application of Statistics. My current interests are in Wastewater-based Epidemiology where I am co-director of [CWBE](https://cwbe.ac.uk/)
+
+
 
 ## Education
 
