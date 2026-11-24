@@ -6,7 +6,7 @@ subtitle: |
 image: media/avatar.jpg
 toc: false
 about:
-  template: trestles
+  template: solana
   image-shape: round
   links:
     - icon: person-badge
