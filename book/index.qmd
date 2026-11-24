@@ -10,7 +10,8 @@ listing:
       image: glmm/featured.png
     - title: "Linear Models with Python"
       description: "Code, Errata and Supplementary Materials"
-      path: https://      julianfaraway.github.io/LMP/      image: lmp/featured.png
+      path: https://julianfaraway.github.io/LMP/
+      image: lmp/featured.png
     - title: "Linear Models with R"
       description: "Code, Errata and Supplementary Materials"
       path: https://julianfaraway.github.io/faraway/LMR/
