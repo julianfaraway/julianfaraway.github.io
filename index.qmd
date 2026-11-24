@@ -10,9 +10,6 @@ about:
     - icon: envelope
       text: Email
       href: mailto:jjf23@bath.ac.uk
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com/JulianFaraway
     - icon: person-badge
       text: ORCID
       href: https://orcid.org/0000-0002-7308-3084
@@ -44,6 +41,5 @@ My research is on the interface between the theory and application of Statistics
 ## Contact
 
 - Email: [jjf23\@bath.ac.uk](mailto:jjf23@bath.ac.uk)
-- Telephone: [+44 (0)1225 386992](tel:+441225386992)
 - Address: Department of Mathematical Sciences, University of Bath, Bath, BA2 7AY
 - Office: 4W5.09
