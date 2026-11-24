@@ -1,0 +1,7 @@
+---
+title: "Converting from Hugo to Quarto"
+date: 2026-11-24
+description: "Converting my personal website from Hugo to Quarto was surprisingly easy"
+---
+
+In my last post, four years ago, I wrote about [converting from Bookdown to Quarto](Converting from Bookdown to Quarto – Julian Faraway). It was a substantial amount of work. Today I decided to update my aging personal website from Hugo to Quarto, since that will be easier to maintain. I had been putting this off since it seemed like it would be lot of work. But I just asked GitHub copilot to do it. It needed a little tweaking but it was very easy.
