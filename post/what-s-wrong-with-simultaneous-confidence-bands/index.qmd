@@ -1,5 +1,6 @@
 ---
 title: "What's wrong with simultaneous confidence bands"
+date: 2016-03-11
 description: "Here are some 95% confidence bands for a fitted curve shown on the same data. The first uses spline smoothing from the mgcv package while the second uses a loess smoother from the ggplot2 package."
 ---
 

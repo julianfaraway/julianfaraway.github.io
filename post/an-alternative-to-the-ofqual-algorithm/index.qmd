@@ -1,5 +1,6 @@
 ---
 title: "An Alternative to the OFQUAL algorithm"
+date: 2020-08-19
 description: "As anyone in the UK knows, A-level exams, taken at age 18 and mostly used to determined admission to university were cancelled this year due to the pandemic. The UK government asked OFQUAL (a semi-independent government body) to determine the A-level grades."
 ---
 

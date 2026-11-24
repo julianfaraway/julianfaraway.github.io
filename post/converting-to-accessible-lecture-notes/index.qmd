@@ -1,5 +1,6 @@
 ---
 title: "Converting to Accessible Lecture Notes"
+date: 2020-09-01
 description: "Why do this? In 2018, the UK government passed the The Public Sector Bodies (Websites and Mobile Applications) Accessibility Regulations which requires Universities (among others) to provide all website information in an “accessible” format."
 ---
 

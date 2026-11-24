@@ -1,5 +1,6 @@
 ---
 title: "Converting from Bookdown to Quarto"
+date: 2022-08-17
 description: "Two years ago, I converted my lecture notes to Bookdown. I have been following the development of Quarto with interest. Although Bookdown is not going away, it does seem that future developments will be based on Quarto."
 ---
 

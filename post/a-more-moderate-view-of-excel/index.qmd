@@ -1,5 +1,6 @@
 ---
 title: "A more moderate view of Excel"
+date: 2020-10-06
 description: "When I heard that the UK government had lost 16,000 covid-19 cases meaning that the contacts of infected persons were not traced and informed, I got angry. The problem was attributed to an Excel “glitch” so I posted a rather caustic tweet about how Excel should not be used for data analysis."
 ---
 

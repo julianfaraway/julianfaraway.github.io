@@ -1,5 +1,6 @@
 ---
 title: "Confidence Bands for Smoothness"
+date: 2016-03-16
 description: "In What’s wrong with simultaneous confidence bands, I discussed the deficiencies of standard confidence bands, but how can we do better? Suppose we have a Gaussian process for the curve with some mean and a covariance kernel:"
 ---
 

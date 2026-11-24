@@ -1,5 +1,6 @@
 ---
 title: "When small data beats big data"
+date: 2018-03-29
 description: "More data is always better? No - not always. Nicole Augustin and I have published a paper entitled When Small Data beats Big Data. The main points are:
 Quality beats quantity."
 ---
