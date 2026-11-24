@@ -1,7 +1,0 @@
----
-title: "Bayesian Regression Modeling with INLA"
-description: "Code and Errata"
-image: featured.jpg
----
-
-Code and Errata

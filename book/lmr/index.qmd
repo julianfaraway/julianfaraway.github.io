@@ -1,7 +1,0 @@
----
-title: "Linear Models with R"
-description: "Code, Errata and Supplementary Materials"
-image: featured.png
----
-
-Code, Errata and Supplementary Materials
