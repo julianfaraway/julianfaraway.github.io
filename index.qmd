@@ -9,9 +9,6 @@ about:
   template: trestles
   image-shape: round
   links:
-    - icon: envelope
-      text: Email
-      href: mailto:jjf23@bath.ac.uk
     - icon: person-badge
       text: ORCID
       href: https://orcid.org/0000-0002-7308-3084
