@@ -1,0 +1,21 @@
+---
+title: "What’s wrong with University League tables"
+date: 2016-05-23
+description: "Today, the Guardian published its University Guide 2017. Let’s take a closer look at the components of these league tables. I don’t mean to pick on the Guardian table as the other tables have similar characteristics."
+---
+
+Today, the Guardian published its [University Guide 2017](https://www.theguardian.com/education/2016/may/23/university-league-table-loughborough-races-into-top-five){target="_blank" rel="noopener"}. Let’s take a closer look at the components of these league tables. I don’t mean to pick on the Guardian table as the other tables have similar characteristics.
+
+Three of the measures are based on student satisfaction and are drawn from the National Student Survey. When the NSS started out, it received fairly honest responses and had some value in provoking genuine improvements in education. But its value has deteriorated over time as Universities and students have reacted to it. Most students realise that the future value of their degree depends on the esteem in which their university is held. It is rational to rate your own university highly even if you don’t really feel that way. Furthermore, students find it difficult to rate their experience since most have only been to one university. It’s like rating the only restaurant you’ve ever eaten at. The Guardian makes things worse by using three measures from the NSS in its rankings.
+
+Student to staff ratio is a slippery statistic. Many academics have divided responsibilities between teaching and research. It’s difficult to measure how much teaching they do and how much they interact with students. Class sizes can vary a lot according to type of programme and year in the degree – it’s not like primary education. Spend per student is another problematic measure. Expenditure on facilities can vary substantially from year to year and unpicking university budgets is difficult.
+
+Average entry tariff is a solid measure and reflects student preferences. If you reorder the Guardian table on this measure alone, you’ll get a ranking that is closer to something knowledgeable raters would construct. This measure is sensitive to the selection of courses offered by the university since grades vary among A-level subjects.
+
+Value added scores are highly dubious. It’s a measure of the difference between degree output and A-level input. A-levels are national tests and are a reasonable measure of entry ability. Degree qualifications are not comparable across Universities. A 2:1 at a top university is not the same as a 2:1 from a lower level university. If you compare the exams in Mathematics taken in top universities with those given by lower level universities, you will see huge differences in the difficulty and content. A student obtaining a 2:2 in Mathematics at a top university will likely know far more Maths than a student with a first from a post 92 university. This means it is foolish to take the proportion of good degrees (1 and 2:1) as a measure of output performance.
+
+The final component is the percentage holding career jobs after six months. This is a useful statistic but is hard to measure accurately. This will also be affected by the mixture of courses offered by the university.
+
+All these measures are then combined into a single “Guardian score”. There is no one right way to do this. If you consider the set of all convex combinations of the measures, you would generate a huge number of possible rankings, all them just as valid (or invalid) as the Guardian score. It’s a cake baked from mostly dodgy ingredients using an arbitrary recipe.
+
+We might laugh this off as a bit of harmless fun. Unfortunately, some prospective students and members of the public take it seriously. Universities boast of their performance in press releases and on their websites. University administrators set their policies to increase their league table standing. Some of these policies are harmful to education and rarely are they beneficial. Meanwhile, the league tables are not actually useful to a 17 year old deciding on a degree course. The choice is constrained by expected A-level grades, course and location preferences. The statistics in the tables fluctuate from year to year and are an unreliable predictor of the individual student experience.
