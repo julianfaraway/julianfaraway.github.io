@@ -1,8 +1,24 @@
 ---
 title: "Books"
 listing:
-  contents: "*/index.qmd"
   type: grid
   grid-columns: 2
+  contents:
+    - title: "Extending the Linear Model with R"
+      description: "Code, Errata and Supplementary Materials"
+      path: https://julianfaraway.github.io/faraway/ELM/
+      image: glmm/featured.png
+    - title: "Linear Models with Python"
+      description: "Code, Errata and Supplementary Materials"
+      path: https://julianfaraway.github.io/LMP
+      image: lmp/featured.png
+    - title: "Linear Models with R"
+      description: "Code, Errata and Supplementary Materials"
+      path: https://julianfaraway.github.io/faraway/LMR/
+      image: lmr/featured.png
+    - title: "Bayesian Regression Modeling with INLA"
+      description: "Code and Errata"
+      path: https://julianfaraway.github.io/brinla/
+      image: brinla/featured.jpg
 page-layout: full
 ---
