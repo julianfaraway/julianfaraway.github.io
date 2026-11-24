@@ -4,6 +4,7 @@ listing:
   contents: "*/index.qmd"
   sort: "date desc"
   type: default
+  fields: [date, title, description]
   categories: false
   feed: true
 page-layout: full
