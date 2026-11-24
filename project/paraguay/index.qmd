@@ -1,0 +1,8 @@
+---
+title: "Government Statistics in Paraguay"
+date: 2019-12-15
+description: "Using statistics in government"
+image: featured.png
+---
+
+We visited in Asuncion in 2018 to [deliver a statistics workshop](https://blogs.bath.ac.uk/samba/2018/09/27/samba-visits-paraguay-after-itt8/){target="_blank" rel="noopener"}. We visited again in 2019 to [plan further collaboration](https://www.abc.com.py/edicion-impresa/locales/2019/09/22/cooperacion-de-universidad-britanica/){target="_blank" rel="noopener"}. We are working with [Instituto Desarrollo](https://desarrollo.edu.py/en/home/){target="_blank" rel="noopener"} with support from the [World Bank](https://desarrollo.edu.py/en/world-bank/){target="_blank" rel="noopener"} on a project to iqmprove the quality of production and use of administrative records for evidence-based policy formulation to support the following Sustainable Development Goals.

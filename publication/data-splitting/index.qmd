@@ -1,0 +1,14 @@
+---
+title: "Does data splitting improve prediction?"
+date: 2014-10-01
+description: "Data splitting divides data into two parts. One part is reserved for model selection. In some applications, the second part is used for model validation but we use this part for estimating the parameters of the chosen model. We focus on the problem of constructing reliable predictive distributions for future observed values. We judge the predictive performance using log scoring. We compare the full data strategy with the data splitting strategy for prediction. We show how the full data score can be decomposed into model selection, parameter estimation and data reuse costs. Data splitting is preferred when data reuse costs are high. We investigate the relative performance of the strategies in four simulation scenarios. We introduce a hybrid estimator that uses one part for model selection but both parts for estimation. We argue that a split data analysis is prefered to a full data analysis for prediction with some exceptions."
+author: "Julian Faraway"
+image: featured.gif
+---
+
+## Abstract
+
+Data splitting divides data into two parts. One part is reserved for model selection. In some applications, the second part is used for model validation but we use this part for estimating the parameters of the chosen model. We focus on the problem of constructing reliable predictive distributions for future observed values. We judge the predictive performance using log scoring. We compare the full data strategy with the data splitting strategy for prediction. We show how the full data score can be decomposed into model selection, parameter estimation and data reuse costs. Data splitting is preferred when data reuse costs are high. We investigate the relative performance of the strategies in four simulation scenarios. We introduce a hybrid estimator that uses one part for model selection but both parts for estimation. We argue that a split data analysis is prefered to a full data analysis for prediction with some exceptions.
+
+[DOI](https://doi.org/https://doi.org/10.1007/s11222-014-9522-9) | [blog post](https://julianfaraway.github.io/post/is-data-splitting-good-for-you/)
+

@@ -1,0 +1,9 @@
+---
+title: "Publications"
+listing:
+  contents: "*/index.qmd"
+  sort: "date desc"
+  type: default
+  fields: [image, title, author, date, description]
+page-layout: full
+---

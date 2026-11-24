@@ -1,0 +1,8 @@
+---
+title: "Statistial Analysis of Facial Motion"
+date: 2018-12-21
+description: "Cleft Lip/Palate and Facial Paralysis"
+image: featured.jpg
+---
+
+I am working with [Carroll-Ann Trotman](https://facultyprofiles.tufts.edu/carrollann-trotman){target="_blank" rel="noopener"}. We use [facial motion capture](https://dental.tufts.edu/research/faculty-research/facial-animation-laboratory){target="_blank" rel="noopener"} to model patients with cleft lip/palate or facial paralysis. Here is a [list of my publications](https://people.bath.ac.uk/jjf23/face/){target="_blank" rel="noopener"} in this area.

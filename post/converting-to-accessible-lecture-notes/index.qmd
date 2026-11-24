@@ -1,0 +1,67 @@
+---
+title: "Converting to Accessible Lecture Notes"
+description: "Why do this? In 2018, the UK government passed the The Public Sector Bodies (Websites and Mobile Applications) Accessibility Regulations which requires Universities (among others) to provide all website information in an “accessible” format."
+---
+
+## Why do this?
+
+In 2018, the UK government passed the [The Public Sector Bodies (Websites and Mobile Applications) Accessibility Regulations](https://www.legislation.gov.uk/uksi/2018/852/made){target="_blank" rel="noopener"} which requires Universities (among others) to provide all website information in an “accessible” format. The UK government has provided a more [detailed set of recommendations](https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps){target="_blank" rel="noopener"} on how to meet these requirements. From the mathematical perspective, you can find a [discussion of the requirements](https://www.homepages.ucl.ac.uk/~ucahmto/elearning/latex/2019/05/06/accessibility-regulations.html){target="_blank" rel="noopener"} by Matthew Towers of UCL.
+
+In our case, the primary beneficiaries are people with impaired vision but does include other categories of disability. In the past, we were able to meet the requirements of prior equalities legislation by providing alternative formats to affected students. This might be as simple as producing large print versions but sometimes needed more unusual formats. I was able to send my LaTeX source to a specialist who produced the required formats on a case-by-case basis depending on the students in the class. But under the new legislation, this is no longer acceptable and the primary version of my online materials must be accessible. Since some of these materials are created during the teaching period, I need to be able to create them myself.
+
+The main problem for anyone teaching a mathematical subject is that the primary medium for materials is LaTeX compiled to a PDF. Despite some efforts to make LaTeX-\>PDF accessible, it falls far short of the legal requirements. The main advantage of a webpage or an e-reader is that the fonts can be resized or changed and the page can be resized with the text being reflowed to fit. You cannot do this with a PDF. The main challenge is to convert to a format that allows this resizing and reflowing. There are other requirements for accessibility such as alternate text for images but we’ll focus on the resizing and reflowing problem.
+
+## Bookdown
+
+A big step towards the solution is to use Bookdown. You can find numerous examples at [bookdown.org](https://bookdown.org/){target="_blank" rel="noopener"}. In particular, [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/){target="_blank" rel="noopener"} is very helpful. The books shown on bookdown.org display nicely on webpages but also can be printed in a relatively standard and compact format. If you have never used `R` and do not want to use `R`, don’t worry, you don’t need to. You can use bookdown without any Statistics or R - here’s an [example](https://www.homepages.ucl.ac.uk/~ucahmto/elearning/2019/09/14/bookdown.html){target="_blank" rel="noopener"} of some algebra lecture notes. It certainly helps if you are familiar with markdown but it should not provide much challenge to anyone who has tackled LaTeX.
+
+## Conversion Process
+
+I won’t attempt to provide a step-by-step guide here. Start with the first two chapters of the [bookdown book](https://bookdown.org/yihui/bookdown/){target="_blank" rel="noopener"} to get going. It would be a lot easier to write the bookdown lecture notes directly but you may have a large amount of existing material that needs to be converted from LaTeX. Some of this will be documents of a few pages such as exercise sheets and solutions. You don’t need bookdown for these (we’ll discuss these later). Bookdown is best for a longer document with multiple sections or chapters.
+
+1.  You don’t need to use Rstudio but it does have some useful features. In particular, making a new bookdown project is nice because it creates all the necessary setup files. It also has a nice previewer. But Rstudio was not built for editing LaTeX and I missed all my usual keyboard shortcuts.
+
+2.  [Mathjax](https://www.mathjax.org/){target="_blank" rel="noopener"} takes care of creating all the mathematical equations, both displayed and inline. It’s important to understand this is not done using the usual LaTeX compilation process. I had a lot of LaTeX macros from my predecessor throughout the lecture notes. Mathjax didn’t understand these and I had to replace them with standard LaTeX. Mathjax only understands a limited set of LaTeX packages. For example, it does not have *boldmath* but did have *boldsymbol* so I needed to make some translations.
+
+3.  [Pandoc](https://pandoc.org/){target="_blank" rel="noopener"} is wonderful. It will be installed as part of the bookdown installation process. It does an excellent job of converting your LaTeX into markdown. But it fails on the referencing and citation system used by bookdown. I had to fix all these manually.
+
+4.  The [knitr](https://yihui.org/knitr/){target="_blank" rel="noopener"} engine is usually used for processing R code chunks but I was delighted to find that it also handles [Tikz](https://en.wikipedia.org/wiki/PGF/TikZ){target="_blank" rel="noopener"}.
+
+5.  Although you can use bookdown for short LaTeX documents, it’s easier to use R markdown (on which bookdown is based). Suppose you have *exercise.tex*, convert this to markdown with:
+
+```{=html}
+<!-- -->
+```
+    pandoc -o exercise.md exercise.tex
+
+You may need to fix up the markdown. Add a YAML such as:
+
+    ---
+    title: "Exercise One"
+    author: "Julian Faraway"
+    date: "01/09/2020"
+    output: html_document
+    ---
+
+Change the name to *exercise.Rmd* and convert to HTML with:
+
+    Rscript -e "rmarkdown::render('exercise.Rmd')"
+
+6.  You can produce PDF output from the same source. Let’s suppose this is for students who want to print out some hard copy. As a rule, they will want a compact format so that there are less pages to print. I put
+
+```{=html}
+<!-- -->
+```
+    documentclass: article
+    geometry: "margin=1.5cm,nohead"
+    fontsize: 10pt
+
+in the YAML header of `index.Rmd`. Even so, the output was about 15% longer than the original PDF version. I could cut that down a bit with further fiddling but I don’t want to be messing with LaTeX floats. You can also create an epub version for e-readers although I’m not sure Kindles and the like can cope with Mathjax. R Markdown can also be output in Microsoft Word format which many mathematicians would regard as the ultimate sacrilege.
+
+7.  I have yet to find a convenient way to add alternative text to images using bookdown. The alt-text is confounded with the fig-cap but these should be two different texts. I am also unsure what alt-text is best for something like a scatterplot.
+
+## Conclusion
+
+It took some effort to understand how bookdown works and make the conversion. In the future, writing documents in markdown with embeded LaTeX maths will be no more difficult than creating a full LaTeX document. Given the markdown is simpler than LaTeX, I expect it will be easier. It also allows some more interesting possibilities.
+
+I was pleased with resulting bookdown lecture notes. They are easier to read on screen than a PDF given the flexibility in resizing and reflowing the content. Although I used to provide students with printed lecture notes, I noticed that many used the online PDF version in preference. Although the conversion was motivated by the need to satisfy accessibility legislation, I think the result will benefit all students. Now that more instruction is online, the primary version of the materials should be the web version rather than the hard copy version.

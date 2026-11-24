@@ -1,0 +1,38 @@
+---
+title: "Formatting LaTeX for a small screen"
+date: 2016-09-21
+description: "Almost every student has a smart phone so it makes sense to format lecture notes so that they can be read on these small screen devices. But this can be difficult to achieve if you use LaTeX to produce your lecture notes or other mathematical/statistical handouts."
+---
+
+Almost every student has a smart phone so it makes sense to format lecture notes so that they can be read on these small screen devices. But this can be difficult to achieve if you use LaTeX to produce your lecture notes or other mathematical/statistical handouts. We also want to maintain a full size version so the smaller version needs to be produced with minimal changes. Here are some tips which require increasing effort to implement
+
+1.  Use A6 size paper by opening your LaTeX document with:
+
+```{=html}
+<!-- -->
+```
+        \documentclass[a6paper]{article}
+
+This is one quarter the size of A4 so it will shrink the page size greatly. I use the default 10pt font since students tend to have good eyesight. I can just about read this if I hold my phone in landscape orientation.
+
+2.  Use the *geometry* package to specify minimal margins:
+
+```{=html}
+<!-- -->
+```
+        \usepackage[margin=1mm]{geometry}
+
+Because who needs margins if you are not printing this out.
+
+3.  I use the *graphicx* package for including graphics. When including a plot or diagram use something like this:
+
+```{=html}
+<!-- -->
+```
+        \includegraphics*[width=0.75\textwidth]{resfit.pdf}
+
+The plot will take up 75% of the width of the page which works for both the small and the large screen versions.
+
+Some mathematical expressions can be quite long and will exceed the page width particularly on the small screen version. This is not a problem with text since LaTeX knows how to set the line breaks. But it’s much harder to do this with mathematical expressions. This is where the *breqn* package is very useful. At a minimum you can easily replace all your equation environments with *dmath*. This will get you automated line breaking in your equations. The *breqn* package has a lot more functionality if you want to make more of an effort.
+
+It would be nice if LaTeX could produce documents that could dynamically reflow depending on screen size like the \*epub& format used on e-readers. But that’s unlikely to happen so a version formatted for the small screen is the next best thing.

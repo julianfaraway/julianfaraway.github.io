@@ -1,0 +1,33 @@
+---
+title: "Converting from Bookdown to Quarto"
+description: "Two years ago, I converted my lecture notes to Bookdown. I have been following the development of Quarto with interest. Although Bookdown is not going away, it does seem that future developments will be based on Quarto."
+---
+
+Two years ago, I [converted my lecture notes to Bookdown](https://julianfaraway.github.io/post/converting-to-accessible-lecture-notes/){target="_blank" rel="noopener"}. I have been following the development of [Quarto](https://quarto.org/){target="_blank" rel="noopener"} with interest. Although Bookdown is not going away, it does seem that future developments will be based on Quarto. For this reason, I decided to convert my lecture notes to Quarto. Here’s my experience.
+
+I installed Quarto. I started with a [conversion guide](https://www.openscapes.org/blog/2022/07/21/quarto-migrate/){target="_blank" rel="noopener"} written by Stefanie Butland and Ileana Fenwick. I renamed by Rmd files to qmd files and moved some information around in a couple of config files as described in the guide. Within about 20 minutes, I had the whole book rendered. Great - how easy was that? Unfortunately, on examining the book, I realised I had more work to do.
+
+The first problem was with the displayed equations. Bookdown could be finicky about the placement of the delimiting `$$`’s and my labels were all inside the delimiters. Quarto is more fussy about the layout - you need something like this:
+
+    $$
+    \your \latex \stuff \here
+    $$ {#eq-yourlabel}
+
+In particular, you need to have the `$$`’s on a new line. Fortunately, getting the equations to preview within the editor was a reliable indication that I had done it right - there was no need to keep recompiling to check my work.
+
+The second problem was the cross referencing. Previously, for a figure, you would have the label in the `{r myfig}` chunk and refer to it as `Figure \@ref(fig:myfig)` but this becomes:
+
+```{{r}}
+#| label: fig-myfig
+plot(x,y)
+```
+
+and is referred to as `@fig-myfig` which will render as something like `Figure 5.1` so you’ll need to delete the extra “Figure " from your text. You will need to change the equation, table, section etc. crossreferences also.
+
+The third problem required me to reformat some R chunks. As seen above, the desired format for the option in R chunks has changed to have these each listed on a seperate line, prefixed with a `#|`. This does make sense and the old format still works - sometimes. But if you have some figures with multiple plots or other features, you will have to convert. The new multicolumn setup is nice but you will need to do some editing.
+
+Previously, Bookdown allowed you to load some R code before running each chapter using `before_chapter_script:` but I could not get this to work in Quarto. I had to put this in the `.Rprofile` to get this working (I tend to avoid using .Rprofile for reproducibility reasons).
+
+Someone with better scripting skills than me could write a conversion script to deal with many of these problems (although some hand-editing would still be necessary). I don’t think anyone has done this yet.
+
+Although it took a bit more work than I had initially thought, I am pleased with the result. The design of Quarto is better than Bookdown and it already has some nice features that I want to try. I am also looking forward to a more consistent syntax across the other R markdown documents such as presentations, websites and scripts that I commonly use.

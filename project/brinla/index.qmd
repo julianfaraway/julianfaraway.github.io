@@ -1,0 +1,8 @@
+---
+title: "Bayesian Regression Modeling with INLA"
+date: 2020-08-28
+description: "Code and Errata"
+image: featured.jpg
+---
+
+Code and Errata

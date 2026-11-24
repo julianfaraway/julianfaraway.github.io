@@ -1,0 +1,8 @@
+---
+title: "Books"
+listing:
+  contents: "*/index.qmd"
+  type: grid
+  grid-columns: 2
+page-layout: full
+---

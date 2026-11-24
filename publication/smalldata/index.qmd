@@ -1,0 +1,14 @@
+---
+title: "When small data beats big data"
+date: 2018-03-01
+description: "Small data is sometimes preferable to big data. A high quality small sample can produce superior inferences to a low quality large sample. Data has acquisition, computation and privacy costs which require costs to be balanced against benefits. Statistical inference works well on small data but not so well on large data. Sometimes aggregation into small datasets is better than large individual-level data. Small data is a better starting point for teaching of Statistics."
+author: "Julian Faraway, Nicole Augustin"
+image: featured.png
+---
+
+## Abstract
+
+Small data is sometimes preferable to big data. A high quality small sample can produce superior inferences to a low quality large sample. Data has acquisition, computation and privacy costs which require costs to be balanced against benefits. Statistical inference works well on small data but not so well on large data. Sometimes aggregation into small datasets is better than large individual-level data. Small data is a better starting point for teaching of Statistics.
+
+[DOI](https://doi.org/https://doi.org/10.1016/j.spl.2018.02.031) | [blog post](https://julianfaraway.github.io/post/when-small-data-beats-big-data)
+

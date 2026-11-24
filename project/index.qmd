@@ -1,0 +1,9 @@
+---
+title: "Projects"
+listing:
+  contents: "*/index.qmd"
+  sort: "date desc"
+  type: grid
+  grid-columns: 2
+page-layout: full
+---

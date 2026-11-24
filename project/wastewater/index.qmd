@@ -1,0 +1,8 @@
+---
+title: "Wastewater Monitoring"
+date: 2020-12-21
+description: "Sampling wastewater for Covid-19 and environmental monitoring"
+image: featured.jpg
+---
+
+I am working with [Barbara Kasprzyk-Hordern](https://researchportal.bath.ac.uk/en/persons/barbara-kasprzyk-hordern){target="_blank" rel="noopener"} \[on building an Early Warning System for community-wide infectious disease spread\](UKRI GCRF/Newton Fund : Building an Early Warning System for community-wide infectious disease spread: SARS-CoV-2 tracking in Africa via environment fingerprinting- COVID-19). I am also involved in [EDGE](https://gtr.ukri.org/projects?ref=EP%2FT029986%2F1){target="_blank" rel="noopener"} which is environment fingerprinting via digital technology - a new paradigm in hazard forecasting and early-warning systems for health risks in Africa.

@@ -1,0 +1,49 @@
+---
+title: "Julian Faraway"
+subtitle: "Professor of Statistics"
+image: media/avatar.jpg
+toc: false
+about:
+  template: trestles
+  image-shape: round
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:jjf23@bath.ac.uk
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/JulianFaraway
+    - icon: person-badge
+      text: ORCID
+      href: https://orcid.org/0000-0002-7308-3084
+    - icon: mortarboard
+      text: Google Scholar
+      href: https://scholar.google.co.uk/citations?user=8kgmE5AAAAAJ
+    - icon: github
+      text: GitHub
+      href: https://github.com/julianfaraway
+---
+
+[Department of Mathematical Sciences](http://www.bath.ac.uk/math-sci/), [University of Bath](http://bath.ac.uk)
+
+## Biography
+
+My research is on the interface between the theory and application of Statistics. I have worked on a wide range of statistical problems ranging over air pollution, anxiety and depression, astronomy, athletics, concrete, cosmetics, flooding, fungicides, fuel filters, marketing of cars, obesity and schizophrenia. I have also served as a consultant to industry on statistical issues.
+
+## Interests
+
+- Statistics
+- Data Science
+- R
+
+## Education
+
+- PhD in Statistics, 1987 --- University of California, Berkeley
+- BA in Mathematics, 1982 --- University of Cambridge
+
+## Contact
+
+- Email: [jjf23\@bath.ac.uk](mailto:jjf23@bath.ac.uk)
+- Telephone: [+44 (0)1225 386992](tel:+441225386992)
+- Address: Department of Mathematical Sciences, University of Bath, Bath, BA2 7AY
+- Office: 4W5.09

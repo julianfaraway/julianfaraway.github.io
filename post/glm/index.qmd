@@ -1,0 +1,17 @@
+---
+title: "GLM - An overused paradigm"
+date: 2015-08-19
+description: "There are a very large number of books, articles and university courses with “Generalised Linear Models” (GLM) in the title. I even wrote such a book myself. But is the GLM paradigm really that useful?"
+---
+
+There are a very large number of books, articles and university courses with “Generalised Linear Models” (GLM) in the title. I even wrote such a book myself. But is the GLM paradigm really that useful?
+
+The idea is that we can develop a general theory of estimation, inference and diagnostics that will apply to a wide class of models. We will avoid duplication of effort and synergies will arise across this class of models. The idea goes back to a 1972 paper in JRSS-B by Nelder and Wedderburn.
+
+But what response distributions belong to the GLM family? The Gaussian (or normal) distribution is the most used in practice. But this is simply the linear model for which much more general and powerful results exist. The Gaussian gains nothing from the GLM perspective.
+
+Next we have the binomial and Poisson, which do benefit from GLM membership. But beyond that, the family members become progressively more exotic. The gamma GLM is not commonly used because a linear model with a transformed response will often suffice. Venturing further into the outback, you may find an inverse Gaussian or Tweedie GLM but these are truly rare birds. There are more interesting distributions such as the negative binomial and beta but they are excluded from the club as they don’t belong to the “exponential family” of distributions.
+
+So there are only two important members of the GLM family: the binomial and the Poisson. Even here we must be careful because large chunks of the theory and practice for these models is specific to one or the other. The GLM paradigm does tell us one way to estimate and do inference for these models. But there other ways to do these things.
+
+Statisticians love widely applicable theories – but perhaps a little too much. GLM is a nice, useful theory but the paradigm has become too dominant in the way people learn or are taught about these kind of models.

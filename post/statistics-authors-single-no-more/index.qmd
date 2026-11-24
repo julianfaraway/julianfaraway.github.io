@@ -1,0 +1,31 @@
+---
+title: "Statistics authors single no more"
+date: 2015-12-09
+description: "While looking at tables of contents for journals and CVs for job applications, it struck me that there are a lot of multi-author papers now. Just to check that I was not imagining it, I downloaded the tables of contents for JASA and JRSS-B for the years 2014, 2004, 1994, 1984 and 1974."
+---
+
+While looking at tables of contents for journals and CVs for job applications, it struck me that there are a lot of multi-author papers now. Just to check that I was not imagining it, I downloaded the tables of contents for JASA and JRSS-B for the years 2014, 2004, 1994, 1984 and 1974. I removed the comments, book reviews and corrections to focus just on the research articles. I counted the number of authors for each paper and here’s what I found:
+
+Mean number of authors per article:
+
+  Journal   1974   1984   1994   2004   2014
+  --------- ------ ------ ------ ------ ------
+  JASA      1.48   1.61   1.89   2.50   2.97
+  JRSS      1.29   1.51   1.70   2.45   2.65
+
+and
+
+Fraction of single author articles:
+
+  Journal   1974   1984   1994   2004   2014
+  --------- ------ ------ ------ ------ ------
+  JASA      0.56   0.50   0.35   0.19   0.06
+  JRSS      0.71   0.57   0.41   0.12   0.03
+
+I’d like to have done more but Web of Science doesn’t make it easy to get the data. Nevertheless, the trend is very clear. Browse through a few journals, old and new and you’ll see the same pattern. You can see similar trends in other fields. The average number of authors per paper has been increasing significantly over time. Most dramatically, the number of single author papers has gone from a majority down to single digit percentages.
+
+Now there are several good reasons not to go it alone. If you write a genuine applications paper, you will be collaborating with a scientist from another field who would be a natural co-author. But most of the articles in these two journals are methodological with Statistical authors. In any case this doesn’t explain the trend. It’s also possible that your co-authors bring different skills to the table, theoretical or computational. It’s also nice to have someone to discuss the paper. You correct each other’s errors and misconceptions. You learn from each other. The social aspect of the collaboration can make you more productive. But that’s also been true in the past. You can point to the greater ease of long distance collaborations using the internet but I suspect there is a stronger cause.
+
+The academic world is increasingly driven by metrics. You will get far more credit for writing four articles, each with four authors than for producing one single author paper. So there’s a huge incentive to collaborate. This is good when the co-authors have clearly distinct skills but often they are just other statisticians, much like you.
+
+But something has been lost. Most good papers have one main idea and only one person can have that idea. Sure, other people can help refine that idea and turn it into a paper but somewhere in that list of multiple authors there is that one person who had the idea. Truly creative and innovative ideas start out sounding a bit crazy, ill-formed and speculative. If you discuss the idea with your peers, they will back away since it won’t sound like something that will reliably result in a publishable paper. Don’t even think of submitting a grant proposal. So you work on the idea and turn it into flesh. By that time, you don’t need co-authors. Working as a group is a reliable way to get work published but for truly creative work, you need to go it alone.

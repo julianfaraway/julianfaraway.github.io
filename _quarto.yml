@@ -1,0 +1,39 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "*.qmd"
+    - "!README.md"
+
+website:
+  title: "Julian Faraway"
+  site-url: https://julianfaraway.github.io
+  repo-url: https://github.com/julianfaraway/julianfaraway.github.io
+  page-footer: "© Julian Faraway. Built with [Quarto](https://quarto.org)."
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: post/index.qmd
+        text: Posts
+      - href: project/index.qmd
+        text: Projects
+      - href: book/index.qmd
+        text: Books
+      - href: publication/index.qmd
+        text: Publications
+    right:
+      - icon: github
+        href: https://github.com/julianfaraway
+      - icon: mortarboard
+        href: https://scholar.google.co.uk/citations?user=8kgmE5AAAAAJ
+      - icon: envelope
+        href: mailto:jjf23@bath.ac.uk
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    toc: true
+    css: styles.css

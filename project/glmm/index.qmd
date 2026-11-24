@@ -1,0 +1,8 @@
+---
+title: "Extending the Linear Model with R"
+date: 2020-12-15
+description: "Code, Errata and Supplementary Materials"
+image: featured.png
+---
+
+Code, Errata and Supplementary Materials

@@ -1,0 +1,5 @@
+---
+title: "When small data beats big data"
+date: 2020-09-01
+---
+
